@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400&display=swap');
+
+/* Desktop container: keep max design width but be responsive */
+.desktop {
+    width: min(1440px, 100%);
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 700px;
+    background-color: #ffffff;
+    position: relative;
+    display: block;
+}
+
+/* Hero */
+.desktop .hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    padding: 48px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Right-side image frame */
+.desktop .frame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: clamp(320px, 40vw, 577px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none; /* decorative */
+}
+
+/* Actual hero image class used in HTML */
+.desktop .hero-illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+/* Top nav links */
+.top-nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 18px 32px;
+}
+.top-nav a {
+    color: #111;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+}
+.top-nav a:focus-visible {
+    outline: 3px solid var(--focus-color, #4a90e2);
+    outline-offset: 2px;
+}
+
+/* Title block */
+.desktop .title {
+    position: absolute;
+    left: clamp(16px, 5vw, 60px);
+    top: clamp(60px, 12vh, 260px);
+    max-width: 60%;
+}
+
+/* Gradient heading */
+.desktop .project-mayari {
+    margin: 0;
+    background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(58,68,138,1) 60%, rgba(7,20,62,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: var(--body-font, "Tomorrow", Helvetica, Arial);
+    font-weight: 400;
+    font-size: clamp(36px, 6vw, 96px);
+    letter-spacing: 2.88px;
+    line-height: 1;
+}
+
+/* Tagline under the title */
+.desktop .tagline {
+    margin-top: 8px;
+    font-family: var(--body-font, "Tomorrow", Helvetica);
+    font-weight: 300;
+    color: #722b01;
+    font-size: clamp(14px, 1.8vw, 24px);
+}
+
+/* Unofficial website line */
+.desktop .description {
+    position: absolute;
+    left: clamp(16px, 5vw, 68px);
+    bottom: 36px;
+    max-width: 60%;
+}
+.desktop .unofficial-website {
+    font-family: var(--body-font, "Tomorrow", Helvetica);
+    font-weight: 300;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+}
+
+/* Launch / CTA container */
+.desktop .launch {
+    position: absolute;
+    left: clamp(16px, 5vw, 67px);
+    top: clamp(300px, 38vh, 449px);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Use the actual anchor class from your HTML */
+.btn.engage {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    font-family: var(--body-font, "Tomorrow", Helvetica);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(18px, 2.4vw, 32px);
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn.engage:focus-visible {
+    outline: 3px solid var(--focus-color, #4a90e2);
+    outline-offset: 3px;
+}
+
+/* Decorative arrows container (matches index.html .frame-2 and arrow classes) */
+.desktop .frame-2 {
+    position: absolute;
+    top: clamp(340px, 45vh, 460px);
+    right: clamp(120px, 28vw, 300px);
+    width: 38px;
+    height: 38px;
+    pointer-events: none;
+}
+.desktop .frame-2 .arrow-left,
+.desktop .frame-2 .arrow-right {
+    width: 19px;
+    height: 38px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.desktop .frame-2 .arrow-left { float: left; }
+.desktop .frame-2 .arrow-right { float: right; }
+
+/* Logo adjustments (avoid overflowing) */
+.desktop .white-MAYARI-logo {
+    position: absolute;
+    top: -3px;
+    right: -80px;
+    width: clamp(200px, 60vw, 936px);
+    height: auto;
+    object-fit: contain;
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* Small screens: stack layout */
+@media (max-width: 800px) {
+    .desktop { padding: 20px; }
+    .desktop .frame { position: relative; width: 100%; height: auto; top: auto; right: auto; }
+    .desktop .hero-illustration { width: 100%; height: auto; margin-top: 24px; }
+    .desktop .title { position: relative; left: 0; top: 0; max-width: 100%; padding-right: 0; }
+    .desktop .launch { position: relative; top: 0; left: 0; margin-top: 16px; }
+    .desktop .description { position: relative; bottom: auto; left: 0; margin-top: 12px; }
+    .desktop .white-MAYARI-logo { right: 0; top: auto; position: relative; width: 140px; margin-top: 18px; }
+}
