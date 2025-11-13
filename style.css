@@ -42,6 +42,15 @@
     pointer-events: none;
 }
 
+.site-header {
+    position: absolute; /* 1. Takes the header out of the normal flow */
+    top: 0;             /* Pins it to the top */
+    left: 0;            /* Pins it to the left */
+    right: 0;           /* Pins it to the right */
+    width: 100%;
+    z-index: 100;       /* 2. Layers it on top of the absolutely positioned image */
+}
+
 /* Top nav links */
 .top-nav {
     display: flex;
