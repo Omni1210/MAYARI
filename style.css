@@ -27,7 +27,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: clamp(320px, 40vw, 577px);
+    width: clamp(320px, 33.33vw, 577px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
