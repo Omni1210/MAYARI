@@ -19,23 +19,36 @@
 
   <main class="desktop">
     <section class="hero-section" role="region" aria-label="Project Mayari hero">
-      <div class="frame">
-        <img class="hero-illustration" src="img/162387-1.png" alt="Decorative illustration of stylized aerospace elements" />
+      
+      <!-- FLEX CONTAINER -->
+      <div class="hero-flex-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+          <div class="title">
+            <h1 class="project-mayari">Project Mayari</h1>
+            <p class="tagline">Ascending minds in the light of every insight</p>
+          </div>
+
+          <div class="description">
+            <p class="unofficial-website">Unofficial website of the Aerospace Engineering Student Society - Batangas State University</p>
+          </div>
+
+          <div class="launch">
+            <a href="#" class="btn engage" role="button" aria-label="Engage with Project Mayari">ENGAGE</a>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-right">
+          <div class="frame">
+            <img class="hero-illustration" src="img/162387-1.png" alt="Decorative illustration of stylized aerospace elements" />
+          </div>
+        </div>
+
       </div>
 
-      <div class="title">
-        <h1 class="project-mayari">Project Mayari</h1>
-        <p class="tagline">Ascending minds in the light of every insight</p>
-      </div>
-
-      <div class="description">
-        <p class="unofficial-website">Unofficial website of the Aerospace Engineering Student Society - Batangas State University</p>
-      </div>
-
-      <div class="launch">
-        <a href="#" class="btn engage" role="button" aria-label="Engage with Project Mayari">ENGAGE</a>
-      </div>
-
+      <!-- Decorative arrows -->
       <div class="frame-2" aria-hidden="true">
         <img class="arrow-left" src="img/vector-9.svg" alt="" />
         <img class="arrow-right" src="img/vector-10.svg" alt="" />
@@ -48,5 +61,19 @@
   <footer class="site-footer" aria-label="Footer">
     <!-- add footer content here -->
   </footer>
+
+  <!-- JS to fix right-side width regardless of zoom -->
+  <script>
+    function setRightWidth() {
+      const heroRight = document.querySelector('.hero-right');
+      if (heroRight) {
+        const screenWidth = window.screen.width;
+        heroRight.style.width = (screenWidth * 0.3333) + 'px';
+      }
+    }
+
+    window.addEventListener('load', setRightWidth);
+    window.addEventListener('resize', setRightWidth);
+  </script>
 </body>
 </html>
