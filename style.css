@@ -63,15 +63,22 @@
 
 /* Top nav links */
 .top-nav {
+    position: fixed;   /* stays on top of image and does NOT affect layout */
+    top: 24px;
+    right: 32px;
     display: flex;
-    gap: 18px;
+    gap: 24px;
     align-items: center;
-    padding: 18px 32px;
+    z-index: 2000; /* strong enough to stay above the photo */
 }
+
 .top-nav a {
-    color: #111;
+    font-family: "Tomorrow", sans-serif;
     font-weight: 300;
-    letter-spacing: 1.6px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;   /* ← white so readable over image */
+    text-shadow: 0 0 6px rgba(0,0,0,0.35); /* readability improvement */
     text-decoration: none;
 }
 
