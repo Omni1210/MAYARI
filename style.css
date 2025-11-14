@@ -44,10 +44,12 @@
 .desktop .hero-illustration {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    flex-shrink: 0; /* Important: prevents shrinking on zoom */
+    object-fit: cover;      /* <-- fills the space */
+    object-position: center;
+    flex-shrink: 0;
     pointer-events: none;
 }
+
 
 /* Header */
 .site-header {
