@@ -1,91 +1,96 @@
+/* global.css - consolidated and cleaned */
+
+/* Font import (single place) */
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-/* Set up basic browser consistency */
-* {
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0px;
-    height: 100%;
-}
-
-/* A blue color as a generic focus style for accessibility */
-button:focus-visible {
-    outline: 2px solid #4a90e2 !important;
-    outline: -webkit-focus-ring-color auto 5px !important;
-}
-
-/* Remove default link underline */
-a {
-    text-decoration: none;
-}
-
-/* Box-sizing for all elements and their pseudo-elements */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-/* Smooth font rendering */
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 /* Design tokens */
 :root {
-    --focus-color: #4a90e2;
-    --body-font: 'Tomorrow', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --text-color: #111;
-    --bg-color: #fff;
-    --base-line-height: 1.4;
+  --focus-color: #4a90e2;
+  --body-font: 'Tomorrow', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --text-color: #111;
+  --bg-color: #fff;
+  --base-line-height: 1.4;
+
+  /* spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* type scale */
+  --fs-xs: clamp(12px, 1vw, 14px);
+  --fs-sm: clamp(14px, 1.2vw, 16px);
+  --fs-md: clamp(16px, 1.6vw, 20px);
+  --fs-lg: clamp(24px, 3vw, 36px);
+  --fs-xl: clamp(36px, 6vw, 96px);
+
+  box-sizing: border-box;
 }
 
-/* Page defaults */
+/* Box-sizing inheritance */
+*, *::before, *::after { box-sizing: inherit; }
+
+/* Basic resets and page defaults */
 html, body {
-    height: 100%;
-    margin: 0;
-    font-family: var(--body-font);
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    line-height: var(--base-line-height);
-    -webkit-text-size-adjust: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: var(--base-line-height);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Respect reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-/* Focus styles for accessibility (use focus-visible where supported) */
-:focus {
-    outline: none;
-}
+/* Accessibility: focus styles */
+:focus { outline: none; }
 :focus-visible,
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-    outline: 3px solid var(--focus-color);
-    outline-offset: 2px;
+  outline: 3px solid var(--focus-color);
+  outline-offset: 2px;
 }
 
-/* Remove default link underline but keep visible focus */
-a {
-    text-decoration: none;
-    color: inherit;
+/* Fallback for browsers without :focus-visible support */
+@supports not selector(:focus-visible) {
+  :focus { outline: 3px solid var(--focus-color); outline-offset: 2px; }
 }
 
-/* Ensure form controls inherit font */
-button, input, textarea, select {
-    font-family: inherit;
-    font-size: 100%;
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Links and basic controls */
+a { text-decoration: none; color: inherit; }
+button, input, textarea, select { font-family: inherit; font-size: 100%; }
+
+/* Utilities (small, helpful helpers) */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+/* Small responsive helper (use in components if needed) */
+.container {
+  width: min(1440px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: clamp(16px, 4vw, 48px);
 }
