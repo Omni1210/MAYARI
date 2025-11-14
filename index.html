@@ -6,27 +6,31 @@
   <title>Project Mayari | Aerospace Engineering Society</title>
   <meta name="description" content="Unofficial website of the Aerospace Engineering Student Society Batangas State University." />
   <meta name="theme-color" content="#000000" />
+  <!-- Performance: preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link rel="stylesheet" href="global.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="top-nav" aria-label="Main navigation">
-      <a href="#" class="contact-link" aria-label="Contact us">Contact</a>
-      <a href="#" class="about-link" aria-label="About Project Mayari">About</a>
+      <ul>
+        <li><a href="#" class="contact-link">Contact</a></li>
+        <li><a href="#" class="about-link">About</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="desktop">
-    <section class="hero-section" role="region" aria-label="Project Mayari hero">
-
+    <section class="hero-section" aria-labelledby="project-mayari-heading">
       <!-- FLEX CONTAINER -->
       <div class="hero-flex-container">
-
         <!-- LEFT CONTENT -->
         <div class="hero-left">
           <div class="title">
-            <h1 class="project-mayari">Project Mayari</h1>
+            <h1 id="project-mayari-heading" class="project-mayari">Project Mayari</h1>
             <p class="tagline">Ascending minds in the light of every insight</p>
           </div>
 
@@ -35,17 +39,21 @@
           </div>
 
           <div class="launch">
-            <a href="#" class="btn engage" role="button" aria-label="Engage with Project Mayari">ENGAGE</a>
+            <a href="#" class="btn engage" aria-label="Engage with Project Mayari">ENGAGE</a>
           </div>
         </div>
 
         <!-- RIGHT IMAGE -->
         <div class="hero-right">
           <div class="frame">
-            <img class="hero-illustration" src="img/162387-1.png" alt="Decorative illustration of stylized aerospace elements" />
+            <img
+              class="hero-illustration"
+              src="img/162387-1.png"
+              srcset="img/162387-1.png 1x, img/162387-1@2x.png 2x"
+              alt="Decorative illustration of stylized aerospace elements"
+            />
           </div>
         </div>
-
       </div>
 
       <!-- Decorative arrows -->
