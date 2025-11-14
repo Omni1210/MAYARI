@@ -152,25 +152,24 @@
     outline-offset: 3px;
 }
 
-/* Decorative arrows container (matches index.html .frame-2 and arrow classes) */
-.desktop .frame-2 {
-    position: absolute;
-    top: clamp(340px, 45vh, 460px);
-    right: clamp(120px, 28vw, 300px);
-    width: 38px;
-    height: 38px;
-    pointer-events: none;
+/* Right-side image frame */
+.desktop .frame {
+    position: absolute;
+    top: 0;
+    right: 0; /* Pinned firmly to the right edge */
+    height: 100%;
+    
+    /* NEW Scaling Rules */
+    width: 33.33%;
+    min-width: 320px;
+    max-width: 577px;
+    
+    /* Display Rules */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none; /* decorative */
 }
-.desktop .frame-2 .arrow-left,
-.desktop .frame-2 .arrow-right {
-    width: 19px;
-    height: 38px;
-    display: inline-block;
-    vertical-align: middle;
-}
-.desktop .frame-2 .arrow-left { float: left; }
-.desktop .frame-2 .arrow-right { float: right; }
-
 /* Logo adjustments (avoid overflowing) */
 .desktop .white-MAYARI-logo {
     position: absolute;
