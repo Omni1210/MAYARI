@@ -71,14 +71,14 @@
 
 /* Title block */
 .desktop .title {
-    position: absolute;
-    left: clamp(16px, 5vw, 60px);
-    top: clamp(60px, 12vh, 260px);
-    max-width: 60%;
+    position: absolute;
+    left: clamp(16px, 5vw, 60px);
+    top: clamp(60px, 12vh, 400px); /* ✅ Increased vertical scaling limit */
+    max-width: 60%;
 }
 
 /* Gradient heading */
-.desktop .project-mayari {
+.desktop .project-mayari {    
     margin: 0;
     background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(58,68,138,1) 60%, rgba(7,20,62,1) 100%);
     -webkit-background-clip: text;
@@ -118,14 +118,13 @@
 
 /* Launch / CTA container */
 .desktop .launch {
-    position: absolute;
-    left: clamp(16px, 5vw, 67px);
-    top: clamp(300px, 38vh, 449px);
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    position: absolute;
+    left: clamp(16px, 5vw, 67px);
+    top: clamp(300px, 38vh, 600px); /* ✅ Increased vertical scaling limit */
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
-
 /* Use the actual anchor class from your HTML */
 .btn.engage {
     display: inline-flex;
