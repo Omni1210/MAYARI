@@ -2,19 +2,23 @@
 
 /* Desktop container */
 .desktop {
-    width: min(1440px, 100%);
-    margin: 0 auto;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;          /* FIXED */
+    padding: 0;         /* ADDED */
+    overflow: hidden;   /* ADDED — prevents zoom-out collapse */
     min-height: 700px;
     background-color: #ffffff;
     position: relative;
 }
+
 
 /* Hero section */
 .desktop .hero-section {
     position: relative;
     width: 100%;
     min-height: 700px;
-    padding: 48px;
+    padding: 3vw;
     overflow: hidden;
     box-sizing: border-box;
 }
