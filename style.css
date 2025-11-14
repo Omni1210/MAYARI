@@ -19,28 +19,29 @@
     box-sizing: border-box;
 }
 
-/* RIGHT-SIDE IMAGE FRAME (corrected — only ONE block now) */
 .desktop .frame {
     position: absolute;
     top: 0;
-    right: 0;          /* ← keeps it on the RIGHT side */
-    height: 100%;
+    right: 0;
 
-    width: 33.33%;
+    /* 🔥 This is what locks the right side image to 33.33% of screen width */
+    width: 33.33vw;
+    height: 100vh;
+
     min-width: 320px;
-    max-width: 577px;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     pointer-events: none;
 }
 
-/* Hero image */
+
 .desktop .hero-illustration {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    flex-shrink: 0; /* Important: prevents shrinking on zoom */
     pointer-events: none;
 }
 
