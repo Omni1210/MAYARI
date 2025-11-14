@@ -23,15 +23,18 @@
 
 /* Right-side image frame */
 .desktop .frame {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: clamp(320px, 33.33vw, 577px);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    pointer-events: none; /* decorative */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    /* ✅ NEW: Percentage scales with parent; resists zoom */
+    width: 33.33%;
+    min-width: 320px; /* Re-applied min limit */
+    max-width: 577px; /* Re-applied max limit */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none; /* decorative */
 }
 
 /* Actual hero image class used in HTML */
