@@ -25,12 +25,15 @@
 .desktop .frame {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0;      /* ✅ PINS to the right side */
+    left: auto;    /* ✅ PREVENTS centering */
     height: 100%;
-    /* ✅ NEW: Percentage scales with parent; resists zoom */
+    
+    /* Scaling Rules (Resists zoom, scales with monitor) */
     width: 33.33%;
-    min-width: 320px; /* Re-applied min limit */
-    max-width: 577px; /* Re-applied max limit */
+    min-width: 320px;
+    max-width: 577px;
+    
     display: flex;
     justify-content: flex-end;
     align-items: center;
