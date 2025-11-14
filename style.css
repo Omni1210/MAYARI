@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400&display=swap');
 
-/* Desktop container: keep max design width but be responsive */
+/* Desktop container */
 .desktop {
     width: min(1440px, 100%);
-    max-width: 1440px;
     margin: 0 auto;
     min-height: 700px;
     background-color: #ffffff;
     position: relative;
-    display: block;
 }
 
-/* Hero */
+/* Hero section */
 .desktop .hero-section {
     position: relative;
     width: 100%;
@@ -21,26 +19,24 @@
     box-sizing: border-box;
 }
 
-/* Right-side image frame */
+/* RIGHT-SIDE IMAGE FRAME (corrected — only ONE block now) */
 .desktop .frame {
-    position: absolute;
-    top: 0;
-    right: 0;      /* ✅ PINS to the right side */
-    left: auto;    /* ✅ PREVENTS centering */
-    height: 100%;
-    
-    /* Scaling Rules (Resists zoom, scales with monitor) */
-    width: 33.33%;
-    min-width: 320px;
-    max-width: 577px;
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    pointer-events: none; /* decorative */
+    position: absolute;
+    top: 0;
+    right: 0;          /* ← keeps it on the RIGHT side */
+    height: 100%;
+
+    width: 33.33%;
+    min-width: 320px;
+    max-width: 577px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none;
 }
 
-/* Actual hero image class used in HTML */
+/* Hero image */
 .desktop .hero-illustration {
     width: 100%;
     height: 100%;
@@ -48,13 +44,14 @@
     pointer-events: none;
 }
 
+/* Header */
 .site-header {
-    position: absolute; /* 1. Takes the header out of the normal flow */
-    top: 0;             /* Pins it to the top */
-    left: 0;            /* Pins it to the left */
-    right: 0;           /* Pins it to the right */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    z-index: 100;       /* 2. Layers it on top of the absolutely positioned image */
+    z-index: 100;
 }
 
 /* Top nav links */
@@ -70,44 +67,39 @@
     letter-spacing: 1.6px;
     text-decoration: none;
 }
-.top-nav a:focus-visible {
-    outline: 3px solid var(--focus-color, #4a90e2);
-    outline-offset: 2px;
-}
 
 /* Title block */
 .desktop .title {
-    position: absolute;
-    left: clamp(16px, 5vw, 60px);
-    top: clamp(60px, 12vh, 400px); /* ✅ Increased vertical scaling limit */
-    max-width: 60%;
+    position: absolute;
+    left: clamp(16px, 5vw, 60px);
+    top: clamp(60px, 12vh, 400px);
+    max-width: 60%;
 }
 
 /* Gradient heading */
-.desktop .project-mayari {    
+.desktop .project-mayari {
     margin: 0;
     background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(58,68,138,1) 60%, rgba(7,20,62,1) 100%);
     -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: transparent;
-    font-family: var(--body-font, "Tomorrow", Helvetica, Arial);
+
+    font-family: "Tomorrow", Helvetica, Arial;
     font-weight: 400;
     font-size: clamp(36px, 6vw, 96px);
     letter-spacing: 2.88px;
     line-height: 1;
 }
 
-/* Tagline under the title */
+/* Tagline */
 .desktop .tagline {
     margin-top: 8px;
-    font-family: var(--body-font, "Tomorrow", Helvetica);
+    font-family: "Tomorrow", Helvetica;
     font-weight: 300;
     color: #722b01;
     font-size: clamp(14px, 1.8vw, 24px);
 }
 
-/* Unofficial website line */
+/* Unofficial website description */
 .desktop .description {
     position: absolute;
     left: clamp(16px, 5vw, 68px);
@@ -115,23 +107,24 @@
     max-width: 60%;
 }
 .desktop .unofficial-website {
-    font-family: var(--body-font, "Tomorrow", Helvetica);
+    font-family: "Tomorrow", Helvetica;
     font-weight: 300;
     color: #000;
     font-size: 16px;
     letter-spacing: 1.6px;
 }
 
-/* Launch / CTA container */
+/* Launch button area */
 .desktop .launch {
-    position: absolute;
-    left: clamp(16px, 5vw, 67px);
-    top: clamp(300px, 38vh, 600px); /* ✅ Increased vertical scaling limit */
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    position: absolute;
+    left: clamp(16px, 5vw, 67px);
+    top: clamp(300px, 38vh, 600px);
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
-/* Use the actual anchor class from your HTML */
+
+/* Button */
 .btn.engage {
     display: inline-flex;
     align-items: center;
@@ -141,39 +134,19 @@
     border: 2px solid #000;
     background: transparent;
     color: #000;
-    font-family: var(--body-font, "Tomorrow", Helvetica);
+
+    font-family: "Tomorrow", Helvetica;
     font-weight: 300;
     font-style: italic;
     font-size: clamp(18px, 2.4vw, 32px);
     letter-spacing: 3.2px;
     text-transform: uppercase;
+
     cursor: pointer;
     text-decoration: none;
 }
-.btn.engage:focus-visible {
-    outline: 3px solid var(--focus-color, #4a90e2);
-    outline-offset: 3px;
-}
 
-/* Right-side image frame */
-.desktop .frame {
-    position: absolute;
-    top: 0;
-    right: 0; /* Pinned firmly to the right edge */
-    height: 100%;
-    
-    /* NEW Scaling Rules */
-    width: 33.33%;
-    min-width: 320px;
-    max-width: 577px;
-    
-    /* Display Rules */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    pointer-events: none; /* decorative */
-}
-/* Logo adjustments (avoid overflowing) */
+/* White MAYARI logo */
 .desktop .white-MAYARI-logo {
     position: absolute;
     top: -3px;
@@ -181,17 +154,53 @@
     width: clamp(200px, 60vw, 936px);
     height: auto;
     object-fit: contain;
-    opacity: 1;
     pointer-events: none;
 }
 
-/* Small screens: stack layout */
+/* MOBILE LAYOUT */
 @media (max-width: 800px) {
     .desktop { padding: 20px; }
-    .desktop .frame { position: relative; width: 100%; height: auto; top: auto; right: auto; }
-    .desktop .hero-illustration { width: 100%; height: auto; margin-top: 24px; }
-    .desktop .title { position: relative; left: 0; top: 0; max-width: 100%; padding-right: 0; }
-    .desktop .launch { position: relative; top: 0; left: 0; margin-top: 16px; }
-    .desktop .description { position: relative; bottom: auto; left: 0; margin-top: 12px; }
-    .desktop .white-MAYARI-logo { right: 0; top: auto; position: relative; width: 140px; margin-top: 18px; }
+
+    .desktop .frame {
+        position: relative;
+        width: 100%;
+        height: auto;
+        right: auto;
+        top: auto;
+    }
+
+    .desktop .hero-illustration {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+    }
+
+    .desktop .title {
+        position: relative;
+        left: 0;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .desktop .launch {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 16px;
+    }
+
+    .desktop .description {
+        position: relative;
+        bottom: auto;
+        left: 0;
+        margin-top: 12px;
+    }
+
+    .desktop .white-MAYARI-logo {
+        position: relative;
+        top: auto;
+        right: 0;
+        width: 140px;
+        margin-top: 18px;
+    }
 }
