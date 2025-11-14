@@ -19,7 +19,7 @@
 
   <main class="desktop">
     <section class="hero-section" role="region" aria-label="Project Mayari hero">
-      
+
       <!-- FLEX CONTAINER -->
       <div class="hero-flex-container">
 
@@ -61,19 +61,5 @@
   <footer class="site-footer" aria-label="Footer">
     <!-- add footer content here -->
   </footer>
-
-  <!-- JS to fix right-side width regardless of zoom -->
-  <script>
-    function setRightWidth() {
-      const heroRight = document.querySelector('.hero-right');
-      if (heroRight) {
-        const screenWidth = window.screen.width;
-        heroRight.style.width = (screenWidth * 0.3333) + 'px';
-      }
-    }
-
-    window.addEventListener('load', setRightWidth);
-    window.addEventListener('resize', setRightWidth);
-  </script>
 </body>
 </html>
