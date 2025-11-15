@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400&display=swap');
 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 /* PAGE BODY */
 .desktop {
     width: 100vw;
@@ -7,7 +14,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    min-height: 700px;
+    min-height: 100vh;
     background-color: #ffffff;
     position: relative;
 }
@@ -15,7 +22,7 @@
 /* HERO SECTION */
 .hero-section {
     width: 100%;
-    min-height: 700px;
+    min-height: 100vh;
     padding: 0 3vw;
     position: relative;
 }
@@ -83,7 +90,7 @@
 
 /* DESCRIPTION */
 .description {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .unofficial-website {
     font-family: "Tomorrow";
