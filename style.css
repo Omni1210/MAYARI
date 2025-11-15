@@ -90,7 +90,7 @@ html, body {
 
 /* DESCRIPTION */
 .description {
-    margin-top: 120px;
+    margin-top: 8px;
 }
 .unofficial-website {
     font-family: "Tomorrow";
@@ -148,11 +148,13 @@ html, body {
 /* RIGHT SIDE IMAGE */
 /* ------------------------- */
 .hero-right {
-    width: 33.33vw; /* Always exactly 33.33% of screen */
+    width: 33.33vw;
     min-width: 320px;
     position: relative;
-}
 
+    /* FIX: remove side padding influence */
+    margin-right: -3vw;
+}
 .frame {
     position: absolute;
     right: 0;
