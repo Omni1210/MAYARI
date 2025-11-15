@@ -15,7 +15,7 @@ html, body {
     padding: 0;
     overflow: hidden;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #ffffff;    
     position: relative;
 }
 
@@ -60,6 +60,7 @@ html, body {
 /* LEFT SIDE (TEXT) */
 .hero-left {
     flex: 1;
+    position: relative;
     padding-top: 120px;
     padding-left: clamp(16px, 4vw, 60px);
 }
@@ -87,18 +88,7 @@ html, body {
     color: #722b01;
     font-size: clamp(16px, 2vw, 26px);
 }
-
-/* DESCRIPTION */
-.description {
-    margin-top: 8px;
-}
-.unofficial-website {
-    font-family: "Tomorrow";
-    font-size: 16px;
-    color: #111;
-    letter-spacing: 1.4px;
-}
-
+    
 /* ------------------------- */
 /* ENGAGE BUTTON */
 /* ------------------------- */
@@ -179,6 +169,21 @@ html, body {
     top: -20px;
 
     width: clamp(200px, 50vw, 900px);
+    pointer-events: none;
+}
+
+/* ------------------------- */
+/* FIXED BOTTOM-LEFT "UNOFFICIAL WEBSITE" */
+/* ------------------------- */
+.unofficial-website {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: "Tomorrow";
+    font-size: 16px;
+    color: #111;
+    letter-spacing: 1.4px;
+    z-index: 9999;
     pointer-events: none;
 }
 
