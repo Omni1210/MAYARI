@@ -165,10 +165,11 @@ html, body {
 /* ------------------------- */
 .white-MAYARI-logo {
     position: absolute;
-    right: -120px;
-    top: -20px;
-
-    width: clamp(200px, 50vw, 900px);
+    top: 0;            /* lock to top of the viewport */
+    right: 0;          /* lock to right edge */
+    width: 33.33vw;    /* matches right-side image width */
+    height: 100vh;     /* stretches vertically to fill the right-side height */
+    object-fit: cover; /* ensures it fully occupies the frame */
     pointer-events: none;
 }
 
