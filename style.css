@@ -42,10 +42,12 @@ html, body {
 }
 
 .top-nav a {
-    color: #111;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 1.4px;
+
+    color: white; /* base color */
+    mix-blend-mode: difference;
 }
 
 /* ------------------------- */
@@ -102,7 +104,7 @@ html, body {
     justify-content: space-between;
 
     width: clamp(220px, 30vw, 420px);
-    padding: 12px 24px;
+    padding: 12px 36px;
 
     border-radius: 10px;
     border: 2px solid #000;
