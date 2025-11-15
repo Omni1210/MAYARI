@@ -1,220 +1,204 @@
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400&display=swap');
 
-/* Desktop container */
+/* PAGE BODY */
 .desktop {
     width: 100vw;
     max-width: 100%;
-    margin: 0;          /* FIXED */
-    padding: 0;         /* ADDED */
-    overflow: hidden;   /* ADDED — prevents zoom-out collapse */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     min-height: 700px;
     background-color: #ffffff;
     position: relative;
 }
 
-
-/* Hero section */
-.desktop .hero-section {
-    position: relative;
+/* HERO SECTION */
+.hero-section {
     width: 100%;
     min-height: 700px;
     padding: 0 3vw;
-    overflow: hidden;
-    box-sizing: border-box;
+    position: relative;
 }
 
-.desktop .frame {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    /* 🔥 This is what locks the right side image to 33.33% of screen width */
-    width: 33.33vw;
-    height: 100vh;
-
-    min-width: 320px;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    pointer-events: none;
-}
-
-
-.desktop .hero-illustration {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;      /* <-- fills the space */
-    object-position: center;
-    flex-shrink: 0;
-    pointer-events: none;
-}
-
-
-/* Header */
-.site-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-/* Top nav links */
+/* ------------------------- */
+/* TOP RIGHT NAVIGATION */
+/* ------------------------- */
 .top-nav {
-    position: fixed;   /* stays on top of image and does NOT affect layout */
+    position: absolute;
     top: 24px;
-    right: 32px;
+    right: 36px;
+
     display: flex;
-    gap: 24px;
-    align-items: center;
-    z-index: 2000; /* strong enough to stay above the photo */
+    gap: 22px;
+
+    z-index: 9999;   /* <-- ensures it floats above the right-side image */
 }
 
 .top-nav a {
-    font-family: "Tomorrow", sans-serif;
+    color: #111;
     font-weight: 300;
     font-size: 16px;
-    letter-spacing: 2px;
-    color: #ffffff;   /* ← white so readable over image */
-    text-shadow: 0 0 6px rgba(0,0,0,0.35); /* readability improvement */
-    text-decoration: none;
+    letter-spacing: 1.4px;
 }
 
-/* Title block */
-.desktop .title {
-    position: absolute;
-    left: clamp(16px, 5vw, 60px);
-    top: clamp(60px, 12vh, 400px);
-    max-width: 60%;
+/* ------------------------- */
+/* FLEX LAYOUT */
+/* ------------------------- */
+.hero-flex-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
 
-/* Gradient heading */
-.desktop .project-mayari {
+/* LEFT SIDE (TEXT) */
+.hero-left {
+    flex: 1;
+    padding-top: 120px;
+    padding-left: clamp(16px, 4vw, 60px);
+}
+
+.title {
+    max-width: 65%;
+}
+
+.project-mayari {
     margin: 0;
-    background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(58,68,138,1) 60%, rgba(7,20,62,1) 100%);
+    background: linear-gradient(90deg, #ff5f00 0%, #3a448a 60%, #07143e 100%);
     -webkit-background-clip: text;
     color: transparent;
 
-    font-family: "Tomorrow", Helvetica, Arial;
+    font-family: "Tomorrow";
+    font-size: clamp(40px, 6vw, 96px);
     font-weight: 400;
-    font-size: clamp(36px, 6vw, 96px);
-    letter-spacing: 2.88px;
     line-height: 1;
 }
 
-/* Tagline */
-.desktop .tagline {
-    margin-top: 8px;
-    font-family: "Tomorrow", Helvetica;
+.tagline {
+    margin-top: 10px;
+    font-family: "Tomorrow";
     font-weight: 300;
     color: #722b01;
-    font-size: clamp(14px, 1.8vw, 24px);
+    font-size: clamp(16px, 2vw, 26px);
 }
 
-/* Unofficial website description */
-.desktop .description {
-    position: absolute;
-    left: clamp(16px, 5vw, 68px);
-    bottom: 36px;
-    max-width: 60%;
+/* DESCRIPTION */
+.description {
+    margin-top: 40px;
 }
-.desktop .unofficial-website {
-    font-family: "Tomorrow", Helvetica;
-    font-weight: 300;
-    color: #000;
+.unofficial-website {
+    font-family: "Tomorrow";
     font-size: 16px;
-    letter-spacing: 1.6px;
+    color: #111;
+    letter-spacing: 1.4px;
 }
 
-/* Launch button area */
-.desktop .launch {
-    position: absolute;
-    left: clamp(16px, 5vw, 67px);
-    top: clamp(300px, 38vh, 600px);
+/* ------------------------- */
+/* ENGAGE BUTTON */
+/* ------------------------- */
+.launch {
+    margin-top: 40px;
+}
+
+.btn.engage {
     display: flex;
     align-items: center;
-    gap: 16px;
-}
+    justify-content: space-between;
 
-/* Button */
-.btn.engage {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 28px;
+    width: clamp(220px, 30vw, 420px);
+    padding: 12px 24px;
+
     border-radius: 10px;
     border: 2px solid #000;
     background: transparent;
     color: #000;
 
-    font-family: "Tomorrow", Helvetica;
-    font-weight: 300;
-    font-style: italic;
-    font-size: clamp(18px, 2.4vw, 32px);
-    letter-spacing: 3.2px;
+    font-family: "Tomorrow";
     text-transform: uppercase;
 
     cursor: pointer;
-    text-decoration: none;
+    box-sizing: border-box;
 }
 
-/* White MAYARI logo */
-.desktop .white-MAYARI-logo {
-    position: absolute;
-    top: -3px;
-    right: -80px;
-    width: clamp(200px, 60vw, 936px);
+.engage-text {
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(18px, 2vw, 28px);
+    letter-spacing: 2.5px;
+}
+
+.engage-arrows {
+    display: flex;
+    gap: 6px;
+}
+
+.engage-arrows .arrow {
+    width: 22px;
     height: auto;
-    object-fit: contain;
     pointer-events: none;
 }
 
-/* MOBILE LAYOUT */
-@media (max-width: 800px) {
-    .desktop { padding: 20px; }
+/* ------------------------- */
+/* RIGHT SIDE IMAGE */
+/* ------------------------- */
+.hero-right {
+    width: 33.33vw; /* Always exactly 33.33% of screen */
+    min-width: 320px;
+    position: relative;
+}
 
-    .desktop .frame {
-        position: relative;
+.frame {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.hero-illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------- */
+/* BIG WHITE LOGO */
+/* ------------------------- */
+.white-MAYARI-logo {
+    position: absolute;
+    right: -120px;
+    top: -20px;
+
+    width: clamp(200px, 50vw, 900px);
+    pointer-events: none;
+}
+
+/* ------------------------- */
+/* MOBILE RESPONSIVE */
+/* ------------------------- */
+@media (max-width: 800px) {
+
+    .hero-flex-container {
+        flex-direction: column;
+    }
+
+    .hero-right {
         width: 100%;
         height: auto;
+        min-height: 300px;
+    }
+
+    .hero-illustration {
+        object-fit: contain;
+    }
+
+    .white-MAYARI-logo {
+        position: relative;
         right: auto;
         top: auto;
-    }
-
-    .desktop .hero-illustration {
-        width: 100%;
-        height: auto;
-        margin-top: 24px;
-    }
-
-    .desktop .title {
-        position: relative;
-        left: 0;
-        top: 0;
-        max-width: 100%;
-    }
-
-    .desktop .launch {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-top: 16px;
-    }
-
-    .desktop .description {
-        position: relative;
-        bottom: auto;
-        left: 0;
-        margin-top: 12px;
-    }
-
-    .desktop .white-MAYARI-logo {
-        position: relative;
-        top: auto;
-        right: 0;
-        width: 140px;
-        margin-top: 18px;
+        width: 160px;
+        margin: 20px auto 0;
+        display: block;
     }
 }
+
