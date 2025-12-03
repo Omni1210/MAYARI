@@ -1,56 +1,39 @@
-/* ================= Header Frame ================= */
 .frame {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* left, center, right */
+    justify-content: space-between;
     width: 100%;
     max-width: 1440px;
     height: 81px;
-    padding: 0 24px; /* spacing on sides */
-    position: relative;
-    background-color: transparent;
+    padding: 0 24px;
     font-family: "Tomorrow-Light", Helvetica;
 }
 
-/* ================= Left: Date Box ================= */
-.nav-wrapper {
-    flex: 0 0 auto; /* fixed width */
-    position: static; /* removed absolute positioning */
+/* Give each section a flex-basis so they behave correctly */
+.nav-wrapper { 
+    flex: 0 0 auto; 
+    order: 1; /* left */
 }
 
-.nov-wrapper {
-    width: 183px;
-    height: 33px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 20px;
-    background-color: #2a2a2a99;
-    border-radius: 40px;
+.nav { 
+    flex: 1 1 auto; 
+    margin: 0 20px; 
+    order: 2; /* center */
 }
 
-.nov {
-    font-weight: 300;
-    font-size: 13px;
-    color: #ffffff;
-    text-align: center;
+.div-wrapper { 
+    flex: 0 0 auto; 
+    order: 3; /* right */
 }
 
-/* ================= Center: Navigation Links ================= */
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    padding: 16px 40px;
-    background-color: #2a2a2a99;
-    border-radius: 40px;
-    flex: 1 1 auto; /* take remaining space */
-    margin: 0 20px; /* spacing from left and right */
-    position: static; /* removed absolute positioning */
+/* Remove absolute positioning to let flex work */
+.nav-wrapper,
+.nav,
+.div-wrapper {
+    position: static;
 }
 
-/* ===== Individual Link Wrappers ===== */
+/* Navigation links styling stays the same */
 .gateway-wrapper,
 .events-wrapper,
 .organization-wrapper,
@@ -61,7 +44,6 @@
     height: 19px;
 }
 
-/* ===== Link Styling ===== */
 .text-wrapper,
 .notices,
 .depot {
@@ -79,7 +61,6 @@
     white-space: nowrap;
 }
 
-/* ===== Hover & Focus Effects ===== */
 .text-wrapper:hover,
 .text-wrapper:focus,
 .notices:hover,
@@ -98,12 +79,26 @@
     border-radius: 2px;
 }
 
-/* ================= Right: Upcoming Launches ================= */
-.div-wrapper {
-    flex: 0 0 auto; /* fixed width */
-    position: static; /* removed absolute positioning */
+/* Date box styling */
+.nov-wrapper {
+    width: 183px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    background-color: #2a2a2a99;
+    border-radius: 40px;
 }
 
+.nov {
+    font-weight: 300;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Upcoming launches styling */
 .div {
     width: 350px;
     height: 31px;
@@ -128,15 +123,4 @@
     text-align: right;
     letter-spacing: 0.3px;
     line-height: 14.5px;
-}
-
-/* Optional: ensure links fill their wrappers */
-.frame .text-wrapper,
-.frame .notices,
-.frame .depot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
 }
