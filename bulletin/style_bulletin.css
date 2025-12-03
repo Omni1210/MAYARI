@@ -45,7 +45,7 @@
     background-color: #2a2a2a99;
     border-radius: 40px;
     flex: 1 1 auto; /* take remaining space */
-    margin: 0 20px; /* gap from left and right boxes */
+    margin: 0 20px; /* spacing from left and right */
 }
 
 /* ===== Individual Link Wrappers ===== */
