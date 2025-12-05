@@ -150,7 +150,7 @@ header.frame {
 .hero-lines {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  gap: 2px;
 }
 
 
