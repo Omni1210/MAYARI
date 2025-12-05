@@ -161,5 +161,23 @@ header.frame {
   opacity: 0.9;
 }
 
+.hero-subtitle {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 145%;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.hero-subtitle .highlight {
+  color: #00aaff; /* bright blue */
+  font-weight: 400;
+}
+
+
 
 
