@@ -115,5 +115,23 @@ header.frame {
   background-repeat: no-repeat;
 }
 
+.hero-text {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding-top: 180px;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+
 
 
