@@ -142,7 +142,7 @@ header.frame {
 }
 
 .hero-line-img {
-  height: 20px; /* adjust to match your asset size */
+  height: 30px; /* adjust to match your asset size */
   width: auto;
   display: block;
 }
