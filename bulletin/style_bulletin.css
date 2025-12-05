@@ -1,7 +1,10 @@
 .frame {
-    position: relative;
-    width: 1440px;
-    height: 81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 81px;
+  padding: 0 24px;
+  background-color: #000; /* or whatever your base is */
 }
 
 .frame .header {
