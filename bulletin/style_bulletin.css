@@ -151,6 +151,7 @@ header.frame {
   color: #ffffff;
   margin-top: 6px;
   text-align: center;
+  font-style: italic;
 }
 
 .hero-line-img {
