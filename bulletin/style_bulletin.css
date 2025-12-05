@@ -209,7 +209,7 @@ header.frame {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 28px;
+  gap: 45px;
 
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
@@ -221,7 +221,7 @@ header.frame {
 
   background-color: transparent;
   border: 2px solid #ffffff;
-  padding: 12px 38px;
+  padding: 12px 50px;
   border-radius: 6px;
   text-decoration: none;
   text-align: left;
