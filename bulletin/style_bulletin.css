@@ -155,10 +155,10 @@ header.frame {
 
 .hero-line-divider {
   margin: 12px auto 0;
-  width: 160px;         /* adjust to match your Figma */
+  width: 250px;         /* adjust to match your Figma */
   height: 2px;
-  background-color: #ff9900; /* match your orange */
-  opacity: 0.8;
+  background-color:  #ffffff; /* match your orange */
+  opacity: 0.9;
 }
 
 
