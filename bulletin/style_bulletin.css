@@ -209,7 +209,7 @@ header.frame {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 12px;
+  gap: 28px;
 
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
