@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
+header.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* ensures header sits above the hero image */
+}
+
 /* ===== LEFT DATE PILL ===== */
 
 .nav-wrapper {
