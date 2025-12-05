@@ -5,17 +5,19 @@
   align-items: center;
   height: 81px;
   padding: 0 24px;
-  background-color: #000; /* placeholder */
+  background-color: transparent; /* ← removes black */
   box-sizing: border-box;
 }
 
 /* ===== LEFT DATE PILL ===== */
 
-.nav-wrapper {  
+.nav-wrapper {
   display: flex;
   align-items: center;
   height: 100%;
+  padding: 24px 24px 24px 12px;
 }
+
 
 .nov-wrapper {
   display: flex;
