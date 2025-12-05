@@ -108,7 +108,7 @@ header.frame {
 
 .hero {
   width: 100%;
-  height: 664px;
+  height: 100%;
   background-image: url("../img/bg-1.png"); /* your hero image */
   background-size: cover;
   background-position: center;
