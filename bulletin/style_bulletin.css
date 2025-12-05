@@ -119,8 +119,14 @@ header.frame {
   position: relative;
   z-index: 5;
   text-align: center;
-  padding-top: 180px;
-  color: #ffffff;
+  padding-top: 140px;
+}
+
+.hero-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .hero-title {
@@ -131,8 +137,25 @@ header.frame {
   letter-spacing: 0.72px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 auto 12px;
+  margin: 0;
+  white-space: nowrap;
 }
+
+.hero-line {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: orange;
+}
+
+.left-line {
+  transform: skewX(-30deg);
+}
+
+.right-line {
+  transform: skewX(30deg);
+}
+
 
 
 
