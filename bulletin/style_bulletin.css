@@ -198,8 +198,19 @@ header.frame {
   margin-bottom: 28px;
 }
 
+/* Center the button */
+.cta-button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* Button with left-aligned text */
 .cta-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -207,11 +218,19 @@ header.frame {
   letter-spacing: 0.39px;
   text-transform: uppercase;
   color: #ffffff;
+
   background-color: transparent;
   border: 2px solid #ffffff;
-  padding: 12px 106px;
-  border-radius: 40px;
+  padding: 12px 24px;
+  border-radius: 6px;
   text-decoration: none;
+  text-align: left;
+}
+
+/* Arrow image (when added) */
+.cta-arrow {
+  height: 16px;
+  width: auto;
 }
 
 
