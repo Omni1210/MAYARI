@@ -1,8 +1,7 @@
-/* ===== HEADER LAYOUT ===== */
+/* ===== HEADER CONTAINER ===== */
 
 .frame {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 81px;
   padding: 0 24px;
@@ -10,11 +9,12 @@
   box-sizing: border-box;
 }
 
-/* ===== LEFT: DATE PILL ===== */
+/* ===== LEFT DATE PILL ===== */
 
 .nav-wrapper {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .nov-wrapper {
@@ -32,77 +32,4 @@
   font-size: 13px;
   letter-spacing: 0.39px;
   white-space: nowrap;
-}
-
-/* ===== CENTER: MAIN NAV ===== */
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  padding: 8px 40px;
-  background-color: #2a2a2a99;
-  border-radius: 40px;
-}
-
-/* Shared nav link styling */
-.nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Tomorrow-Light", Helvetica;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 13px;
-  letter-spacing: 0.39px;
-  text-decoration: none;
-  white-space: nowrap;
-  height: 19px;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  opacity: 0.8;
-  outline: none;
-}
-
-.nav-link:focus-visible {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-/* ===== RIGHT: UPCOMING LAUNCHES ===== */
-
-.div-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.div {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 8px 25px;
-  background-color: #2a2a2a99;
-  border-radius: 40px;
-}
-
-.upcoming-launches-wrapper span {
-  font-family: "Tomorrow-Light", Helvetica;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 13px;
-  letter-spacing: 0.39px;
-  white-space: nowrap;
-}
-
-.t-days {
-  font-family: "Tomorrow-Light", Helvetica;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 10px;
-  letter-spacing: 0.30px;
-  white-space: nowrap;
-  text-align: right;
 }
