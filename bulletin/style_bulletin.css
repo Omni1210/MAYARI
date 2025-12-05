@@ -129,18 +129,16 @@ header.frame {
   gap: 20px; /* adjust to match Figma spacing */
 }
 
-.hero-title {
+.hero-subtitle {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 48px;
+  font-weight: 300;
+  font-size: 13px;
   line-height: 145%;
-  letter-spacing: 1.44px;
+  letter-spacing: 0.39px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0;
-  white-space: nowrap;
+  margin-top: 6px;
   text-align: center;
-}
 
 
 .hero-line-img {
