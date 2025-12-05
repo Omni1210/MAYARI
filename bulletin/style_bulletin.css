@@ -126,7 +126,7 @@ header.frame {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px; /* adjust to match Figma spacing */
+  gap: 18px; /* adjust to match Figma spacing */
 }
 
 .hero-title {
@@ -142,7 +142,7 @@ header.frame {
 }
 
 .hero-line-img {
-  height: 30px; /* adjust to match your asset size */
+  height: 40px; /* adjust to match your asset size */
   width: auto;
   display: block;
 }
