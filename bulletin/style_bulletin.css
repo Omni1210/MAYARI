@@ -230,7 +230,7 @@ header.frame {
   text-decoration: none;
   text-align: left;
 
-  width: 540px; /* ✅ controls how far the arrow moves right */
+  width: 500px; /* ✅ controls how far the arrow moves right */
 }
 
 .cta-arrow {
