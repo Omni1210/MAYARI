@@ -221,24 +221,23 @@ header.frame {
   background-color: transparent;
   border: 2px solid #ffffff;
 
-  /* ✅ Left padding small so text sits at far-left */
-  /* ✅ Right padding large so arrow sits far-right */
-  padding: 12px 70px 12px 20px; 
   /* top | right | bottom | left */
+  padding: 12px 20px 12px 20px;
+  /* ✅ small right padding → arrow sits near the border
+     ✅ small left padding → text stays left */
 
   border-radius: 6px;
   text-decoration: none;
   text-align: left;
 
-  /* ✅ Wider button so arrow moves further right */
-  width: 540px;
+  width: 540px; /* ✅ controls how far the arrow moves right */
 }
 
-/* Arrow image (when added) */
 .cta-arrow {
   height: 16px;
   width: auto;
 }
+
 
 
 
