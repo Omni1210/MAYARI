@@ -221,16 +221,19 @@ header.frame {
   background-color: transparent;
   border: 2px solid #ffffff;
 
-  /* ✅ Padding controls top/bottom and side breathing room */
-  padding: 12px 40px;
-
-  /* ✅ Fixed width forces arrow to far right */
-  width: 420px;
+  /* ✅ Left padding small so text sits at far-left */
+  /* ✅ Right padding large so arrow sits far-right */
+  padding: 12px 70px 12px 20px; 
+  /* top | right | bottom | left */
 
   border-radius: 6px;
   text-decoration: none;
   text-align: left;
+
+  /* ✅ Wider button so arrow moves further right */
+  width: 480px;
 }
+
 /* Arrow image (when added) */
 .cta-arrow {
   height: 16px;
