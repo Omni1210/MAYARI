@@ -305,7 +305,7 @@ header.frame {
   white-space: normal;           /* allow <br> */
 
   text-align: justify;           /* ✅ fully justified */
-  text-align-last: left;         /* ✅ natural last line */
+  text-align-last: center;   /* ✅ natural last line */
 }
 
 
