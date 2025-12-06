@@ -222,7 +222,7 @@ header.frame {
   border: 2px solid #ffffff;
 
   /* ✅ Padding controls top/bottom and side breathing room */
-  padding: 12px 24px;
+  padding: 12px 40px;
 
   /* ✅ Fixed width forces arrow to far right */
   width: 420px;
