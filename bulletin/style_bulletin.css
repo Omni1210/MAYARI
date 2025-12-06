@@ -231,7 +231,7 @@ header.frame {
   text-align: left;
 
   /* ✅ Wider button so arrow moves further right */
-  width: 480px;
+  width: 540px;
 }
 
 /* Arrow image (when added) */
