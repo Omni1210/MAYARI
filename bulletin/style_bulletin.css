@@ -356,6 +356,8 @@ header.frame {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 16px;
+
+  text-align: left;             /* ✅ left-aligned */
 }
 
 .feature-description {
@@ -366,7 +368,11 @@ header.frame {
   letter-spacing: 0.42px;
   color: #000000;
   margin-bottom: 28px;
+
+  text-align: justify;          /* ✅ fully justified */
+  text-align-last: left;        /* ✅ last line natural */
 }
+
 
 /* ✅ BUTTON — FULL ORANGE BACKGROUND + WHITE TEXT */
 .feature-button {
