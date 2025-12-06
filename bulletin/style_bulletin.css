@@ -254,18 +254,18 @@ header.frame {
 .section-two-content {
   position: relative;
   width: 100%;
-  max-width: 1440px; /* match your Figma frame */
-  margin: 0 auto;    /* ✅ centers the whole section */
+  max-width: 1440px;   /* match your Figma artboard */
+  margin: 0 auto;      /* ✅ centers the entire block */
   height: auto;
 }
 
-/* Heading */
+/* ✅ HEADING — Tomorrow Light, 24px, justified, centered block */
 .section-two-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 300;              /* Light */
   font-size: 24px;
   line-height: 145%;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.72px;        /* 3% of 24px */
   text-transform: uppercase;
   color: #FF5F00;
 
@@ -273,33 +273,39 @@ header.frame {
   height: auto;
 
   position: absolute;
-  left: 50%;                    /* center anchor */
+  left: 50%;                     /* center anchor */
   transform: translateX(-254px); /* ✅ centered Figma offset */
   top: 53px;
 
   margin: 0;
-  white-space: normal;
+  white-space: normal;           /* allow <br> */
+
+  text-align: justify;           /* ✅ justified text */
+  text-align-last: center;       /* ✅ last line centered */
 }
 
-/* Paragraph */
+/* ✅ PARAGRAPH — Open Sans Light, 14px, justified */
 .section-two-text {
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 300;              /* ✅ Open Sans Light */
   font-size: 14px;
   line-height: 150%;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.42px;        /* 3% of 14px */
   color: #000000;
 
   width: 905px;
   height: auto;
 
   position: absolute;
-  left: 50%;
+  left: 50%;                     /* center anchor */
   transform: translateX(-451px); /* ✅ centered Figma offset */
   top: 187px;
 
   margin: 0;
-  white-space: normal;
+  white-space: normal;           /* allow <br> */
+
+  text-align: justify;           /* ✅ fully justified */
+  text-align-last: left;         /* ✅ natural last line */
 }
 
 
