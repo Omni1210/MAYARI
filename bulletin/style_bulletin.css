@@ -208,7 +208,6 @@ header.frame {
 .cta-button {
   display: inline-flex;
   align-items: center;
-  
   justify-content: space-between;
 
   font-family: "Tomorrow", Helvetica, sans-serif;
@@ -221,12 +220,17 @@ header.frame {
 
   background-color: transparent;
   border: 2px solid #ffffff;
-  padding: 12px 50px;
+
+  /* ✅ Padding controls top/bottom and side breathing room */
+  padding: 12px 24px;
+
+  /* ✅ Fixed width forces arrow to far right */
+  width: 420px;
+
   border-radius: 6px;
   text-decoration: none;
   text-align: left;
 }
-
 /* Arrow image (when added) */
 .cta-arrow {
   height: 16px;
