@@ -52,7 +52,7 @@ header.frame {
 
 .center-nav {
   flex: 1;
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
   padding-right: 32px;
@@ -254,16 +254,18 @@ header.frame {
 .section-two-content {
   position: relative;
   width: 100%;
+  max-width: 1440px; /* match your Figma frame */
+  margin: 0 auto;    /* ✅ centers the whole section */
   height: auto;
 }
 
-/* ✅ HEADING — Tomorrow, 24px, orange */
+/* Heading */
 .section-two-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 145%;
-  letter-spacing: 0.72px; /* 3% of 24px */
+  letter-spacing: 0.72px;
   text-transform: uppercase;
   color: #FF5F00;
 
@@ -271,33 +273,34 @@ header.frame {
   height: auto;
 
   position: absolute;
-  left: 466px;
+  left: 50%;                    /* center anchor */
+  transform: translateX(-254px); /* ✅ centered Figma offset */
   top: 53px;
 
   margin: 0;
-  white-space: normal; /* allow <br> */
+  white-space: normal;
 }
 
-/* ✅ PARAGRAPH — Open Sans, 14px, black */
+/* Paragraph */
 .section-two-text {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 150%;
-  letter-spacing: 0.42px; /* 3% of 14px */
+  letter-spacing: 0.42px;
   color: #000000;
 
   width: 905px;
   height: auto;
 
   position: absolute;
-  left: 269px;
+  left: 50%;
+  transform: translateX(-451px); /* ✅ centered Figma offset */
   top: 187px;
 
   margin: 0;
-  white-space: normal; /* allow <br> */
+  white-space: normal;
 }
-
 
 
 
