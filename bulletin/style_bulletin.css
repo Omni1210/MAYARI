@@ -393,26 +393,21 @@ header.frame {
 }
 
 /* ===== SECTION THREE — Fullscreen Video Background (Locked to Viewport) ===== */
-
 .section-three {
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 100vh;     /* ✅ prevents collapse when zooming */
   overflow: hidden;
 }
 
-/* ✅ This version behaves EXACTLY like background-size: cover */
+/* ✅ Video behaves like a fixed background image */
 .section-three-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100vw;      /* ✅ ensures full coverage horizontally */
-  min-height: 100vh;     /* ✅ ensures full coverage vertically */
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%); /* ✅ keeps video centered at all zoom levels */
-  object-fit: cover;
+  position: fixed;        /* ✅ stays locked to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;           /* ✅ always matches viewport width */
+  height: 100vh;          /* ✅ always matches viewport height */
+  object-fit: cover;      /* ✅ fills the screen without distortion */
   z-index: -1;
   pointer-events: none;
 }
