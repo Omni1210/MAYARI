@@ -5,7 +5,7 @@
   align-items: center;
   height: 81px;
   padding: 0 24px;
-  background-color: transparent; /* ← removes black */
+  background-color: transparent;
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@ header.frame {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* ensures header sits above the hero image */
+  z-index: 10;
 }
 
 /* ===== LEFT DATE PILL ===== */
@@ -25,7 +25,6 @@ header.frame {
   height: 100%;
   padding: 24px 8px 24px 12px;
 }
-
 
 .nov-wrapper {
   display: flex;
@@ -38,21 +37,20 @@ header.frame {
 
 .nov {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;        /* Light */
+  font-weight: 300;
   font-size: 13px;
   line-height: 145%;
-  letter-spacing: 0.39px;  /* 3% of 13px */
+  letter-spacing: 0.39px;
   text-transform: uppercase;
   color: #ffffff;
   white-space: nowrap;
 }
 
-
 /* ===== CENTER PILL ===== */
 
 .center-nav {
   flex: 1;
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 32px;
@@ -60,7 +58,7 @@ header.frame {
 
 .nav-menu {
   display: flex;
-  gap: 70px; /* Adjust spacing between items */
+  gap: 70px;
   background-color: #2b2b2b99;
   border-radius: 40px;
   padding: 12px 32px;
@@ -68,10 +66,10 @@ header.frame {
 
 .nav-menu a {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;               /* Light */
+  font-weight: 300;
   font-size: 13px;
   line-height: 145%;
-  letter-spacing: 0.39px;         /* 3% of 13px */
+  letter-spacing: 0.39px;
   text-transform: uppercase;
   color: #ffffff;
   white-space: nowrap;
@@ -82,18 +80,18 @@ header.frame {
 .right-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 8px;   /* tighten gap with center nav */
-  padding-right: 12px; /* outer margin */
+  padding-left: 8px;
+  padding-right: 12px;
 }
 
 .launch-pill {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 36px 12px 24px; /* top right bottom left */
+  padding: 12px 36px 12px 24px;
   background-color: #2a2a2a99;
   border-radius: 40px;
-  gap: 40px; /* space between label and countdown */
+  gap: 40px;
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 13px;
@@ -109,7 +107,7 @@ header.frame {
 .hero {
   width: 100%;
   height: 800px;
-  background-image: url("../img/bg-1.png"); /* your hero image */
+  background-image: url("../img/bg-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,7 +124,7 @@ header.frame {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* adjust to match Figma spacing */
+  gap: 20px;
 }
 
 .hero-title {
@@ -139,8 +137,8 @@ header.frame {
   color: #ffffff;
   margin: 0;
   white-space: nowrap;
-  text-align: center;
 }
+
 .hero-subtitle {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
@@ -155,7 +153,7 @@ header.frame {
 }
 
 .hero-line-img {
-  height: 40px; /* adjust to match your asset size */
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -168,14 +166,14 @@ header.frame {
 
 .hero-line-divider {
   margin: 6px auto 0;
-  width: 550px;         /* adjust to match your Figma */
+  width: 550px;
   height: 2px;
-  background-color:  #ffffff; /* match your orange */
+  background-color: #ffffff;
   opacity: 0.9;
 }
 
 .hero-subtitle .highlight {
-  color: #00eaff; /* electric cyan */
+  color: #00eaff;
   font-weight: 400;
 }
 
@@ -198,18 +196,15 @@ header.frame {
   margin-bottom: 28px;
 }
 
-/* Center the button */
 .cta-button-wrapper {
   width: 100%;
   text-align: center;
 }
 
-/* Button with left-aligned text */
 .cta-button {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -217,20 +212,12 @@ header.frame {
   letter-spacing: 0.39px;
   text-transform: uppercase;
   color: #ffffff;
-
   background-color: transparent;
   border: 2px solid #ffffff;
-
-  /* top | right | bottom | left */
-  padding: 12px 20px 12px 20px;
-  /* ✅ small right padding → arrow sits near the border
-     ✅ small left padding → text stays left */
-
+  padding: 12px 20px;
   border-radius: 6px;
   text-decoration: none;
-  text-align: left;
-
-  width: 500px; /* ✅ controls how far the arrow moves right */
+  width: 500px;
 }
 
 .cta-arrow {
@@ -238,77 +225,65 @@ header.frame {
   width: auto;
 }
 
-/* -------------------------Section 2 ---------------------------*/
+/* ------------------------- SECTION 2 ---------------------------*/
 
 .section-two {
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 900px; /* ✅ FIX: prevents collapse */
   background-image: url("../img/bg-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 1; /* ✅ FIX: keeps video behind */
 }
-
-/* ------------------------- Section 2 Typography ---------------------------*/
 
 .section-two-content {
   position: relative;
   width: 100%;
-  max-width: 1440px;   /* match your Figma artboard */
-  margin: 0 auto;      /* ✅ centers the entire block */
-  height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-/* ✅ HEADING — Tomorrow Light, 24px, justified, centered block */
+/* ===== SECTION 2 TYPOGRAPHY ===== */
+
 .section-two-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;              /* Light */
+  font-weight: 300;
   font-size: 24px;
   line-height: 145%;
-  letter-spacing: 0.72px;        /* 3% of 24px */
+  letter-spacing: 0.72px;
   text-transform: uppercase;
   color: #FF5F00;
-
   width: 512px;
-  height: auto;
-
   position: absolute;
-  left: 50%;                     /* center anchor */
-  transform: translateX(-254px); /* ✅ centered Figma offset */
+  left: 50%;
+  transform: translateX(-254px);
   top: 53px;
-
   margin: 0;
-  white-space: normal;           /* allow <br> */
-
-  text-align: justify;           /* ✅ justified text */
-  text-align-last: center;       /* ✅ last line centered */
+  text-align: justify;
+  text-align-last: center;
 }
 
-/* ✅ PARAGRAPH — Open Sans Light, 14px, justified */
 .section-two-text {
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-weight: 300;              /* ✅ Open Sans Light */
+  font-weight: 300;
   font-size: 14px;
   line-height: 150%;
-  letter-spacing: 0.42px;        /* 3% of 14px */
+  letter-spacing: 0.42px;
   color: #000000;
-
   width: 905px;
-  height: auto;
-
   position: absolute;
-  left: 50%;                     /* center anchor */
-  transform: translateX(-451px); /* ✅ centered Figma offset */
+  left: 50%;
+  transform: translateX(-451px);
   top: 187px;
-
   margin: 0;
-  white-space: normal;           /* allow <br> */
-
-  text-align: justify;           /* ✅ fully justified */
-  text-align-last: center;   /* ✅ natural last line */
+  text-align: justify;
+  text-align-last: center;
 }
 
-/* =========================== FEATURE BOXES ============================= */
+/* ===== FEATURE BOXES ===== */
 
 .feature-boxes {
   position: absolute;
@@ -328,7 +303,6 @@ header.frame {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* ✅ ICON WRAPPER — EXACT 210 × 210, NO CROPPING */
 .feature-icon-wrapper {
   width: 210px;
   height: 210px;
@@ -341,11 +315,8 @@ header.frame {
 .feature-icon {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;   /* ✅ scales down, never crops */
-  display: block;
+  object-fit: contain;
 }
-
-/* ===== TEXT ===== */
 
 .feature-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
@@ -356,8 +327,7 @@ header.frame {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 16px;
-
-  text-align: left;             /* ✅ left-aligned */
+  text-align: left;
 }
 
 .feature-description {
@@ -368,13 +338,10 @@ header.frame {
   letter-spacing: 0.42px;
   color: #000000;
   margin-bottom: 28px;
-
-  text-align: justify;          /* ✅ fully justified */
-  text-align-last: left;        /* ✅ last line natural */
+  text-align: justify;
+  text-align-last: left;
 }
 
-
-/* ✅ BUTTON — FULL ORANGE BACKGROUND + WHITE TEXT */
 .feature-button {
   display: inline-block;
   font-family: "Tomorrow", Helvetica, sans-serif;
@@ -382,17 +349,16 @@ header.frame {
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-
-  background-color: #FF5F00;   /* ✅ full orange fill */
-  color: #ffffff;              /* ✅ white text */
-  border: none;                /* ✅ no border */
-
-  padding: 14px 26px;          /* ✅ bigger, cleaner padding */
+  background-color: #FF5F00;
+  color: #ffffff;
+  border: none;
+  padding: 14px 26px;
   border-radius: 8px;
   text-decoration: none;
 }
 
-/* ===== SECTION THREE — Fullscreen Video Background (Locked to Viewport) ===== */
+/* ===== GLOBAL BACKGROUND VIDEO ===== */
+
 #bg-video {
   position: fixed;
   top: 50%;
@@ -407,20 +373,13 @@ header.frame {
   pointer-events: none;
 }
 
+/* ===== SECTION THREE — VIDEO WINDOW ===== */
+
 .section-three {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background: transparent;
+  z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
