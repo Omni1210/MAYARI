@@ -504,17 +504,29 @@ header.frame {
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 280px;
+  width: 326px;
+  height: 459px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  border-radius: 14px;
   text-align: center;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
 
 .carousel-item img {
   width: 100%;
   height: auto;
+  max-height: 240px;
+  object-fit: contain;
   border-radius: 12px;
   margin-bottom: 16px;
 }
+
 
 .carousel-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
