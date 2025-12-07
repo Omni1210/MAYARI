@@ -381,3 +381,55 @@ header.frame {
   object-fit: cover;
 }
 
+/* ===== SECTION THREE — CONTENT STYLING ===== */
+
+.section-three-content {
+  position: relative;
+  z-index: 2;
+  padding: 120px 80px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-three-title {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-three-subtext {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 18px;
+}
+
+.section-three-meta {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 160%;
+  opacity: 0.85;
+  margin-bottom: 32px;
+}
+
+.section-three-button {
+  display: inline-block;
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  background-color: #FF5F00;
+  color: #ffffff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
