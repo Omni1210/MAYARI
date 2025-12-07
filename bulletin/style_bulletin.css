@@ -364,13 +364,15 @@ header.frame {
   text-decoration: none;
 }
 
-/* ===== SECTION THREE — VIDEO BACKGROUND ONLY ===== */
+/* ===== SECTION THREE — VIDEO BACKGROUND ===== */
 
 .section-three {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden; /* prevents bleed */
+  overflow: hidden;
+  background: black;
+  z-index: 1;
 }
 
 .section-three-video {
@@ -379,57 +381,98 @@ header.frame {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
-/* ===== SECTION THREE — CONTENT STYLING ===== */
-
-.section-three-content {
-  position: relative;
-  z-index: 2;
-  padding: 120px 80px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.section-three-title {
-  font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  letter-spacing: 0.72px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.section-three-subtext {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 160%;
-  margin-bottom: 18px;
-}
+/* ===== TOP LEFT META ===== */
 
 .section-three-meta {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 2;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 160%;
+  color: #ffffff;
   opacity: 0.85;
-  margin-bottom: 32px;
+  text-align: left;
 }
 
-.section-three-button {
-  display: inline-block;
+/* ===== BOTTOM RIGHT CONTENT BLOCK ===== */
+
+.section-three-lower {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 2;
+  text-align: left;
+}
+
+.section-three-textblock {
+  margin-bottom: 28px;
+}
+
+.launch-countdown {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  background-color: #FF5F00;
   color: #ffffff;
-  border: none;
-  padding: 14px 26px;
-  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.launch-tagline {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.launch-title {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 145%;
+}
+
+/* ===== CTA BUTTON (same as Section One) ===== */
+
+.cta-button-wrapper {
+  width: 100%;
+  text-align: left;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 12px 20px;
+  border-radius: 6px;
   text-decoration: none;
+  width: 500px;
+}
+
+.cta-arrow {
+  height: 16px;
+  width: auto;
 }
 
 
