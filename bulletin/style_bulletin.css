@@ -237,13 +237,13 @@ header.frame {
   z-index: 1;
 }
 
-/* ✅ NEW WRAPPER THAT FIXES THE COLLAPSE */
+/* ✅ THIS FIXES THE COLLAPSE */
 .section-two-inner {
   position: relative;
   width: 100%;
   height: auto;
   padding-top: 53px;
-  padding-bottom: 700px;
+  padding-bottom: 900px;
 }
 
 .section-two-content {
