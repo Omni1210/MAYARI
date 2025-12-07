@@ -384,24 +384,24 @@ header.frame {
   z-index: 0;
 }
 
-/* ===== TOP LEFT META ===== */
+/* ===== SECTION THREE — UPDATED FONTS ===== */
 
+/* ✅ Top-left meta */
 .section-three-meta {
   position: absolute;
   top: 40px;
   left: 40px;
   z-index: 2;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 13px;
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 200; /* Extra Light */
+  font-size: 10px;
   line-height: 160%;
   color: #ffffff;
   opacity: 0.85;
   text-align: left;
 }
 
-/* ===== BOTTOM RIGHT CONTENT BLOCK ===== */
-
+/* ✅ Bottom-right content block */
 .section-three-lower {
   position: absolute;
   bottom: 40px;
@@ -414,38 +414,42 @@ header.frame {
   margin-bottom: 28px;
 }
 
+/* ✅ T‑24 DAYS */
 .launch-countdown {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 300; /* Light */
+  font-style: italic;
+  font-size: 32px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 12px;
 }
 
+/* ✅ MARK YOUR FLIGHT PLANS */
 .launch-tagline {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
+  font-weight: 300; /* Light */
+  font-size: 20px;
   letter-spacing: 1.08px;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 12px;
 }
 
+/* ✅ 4TH AEROSPACE DAYS OF EXCELLENCE */
 .launch-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 300; /* Light */
+  font-style: italic;
+  font-size: 40px;
   letter-spacing: 0.72px;
   text-transform: uppercase;
   color: #ffffff;
   line-height: 145%;
 }
 
-/* ===== CTA BUTTON (same as Section One) ===== */
-
+/* ✅ SEE MORE DETAILS (same as Section 1 CTA) */
 .cta-button-wrapper {
   width: 100%;
   text-align: left;
@@ -456,7 +460,7 @@ header.frame {
   align-items: center;
   justify-content: space-between;
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 300; /* Light */
   font-size: 16px;
   line-height: 145%;
   letter-spacing: 0.39px;
@@ -474,5 +478,4 @@ header.frame {
   height: 16px;
   width: auto;
 }
-
 
