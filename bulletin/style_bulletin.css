@@ -394,22 +394,28 @@ header.frame {
 
 /* ===== SECTION THREE — Fullscreen Video Background ===== */
 
+/* ===== SECTION THREE — Fullscreen Video Background (Stays Centered) ===== */
+
 .section-three {
   position: relative;
   width: 100%;
-  min-height: 100vh;   /* full screen height */
-  overflow: hidden;    /* hides any overflow from the video */
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* ✅ This forces the video to behave like background-size: cover */
 .section-three-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* fills the entire section without distortion */
-  z-index: -1;         /* keeps video behind any future content */
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%); /* ✅ Keeps video centered at all zoom levels */
+  z-index: -1;
+  pointer-events: none;
 }
+
 
 
 
