@@ -229,14 +229,21 @@ header.frame {
 
 .section-two {
   width: 100%;
-  min-height: 100vh;
-  padding-bottom: 900px; /* ✅ FIX: prevents collapse */
   background-image: url("../img/bg-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  z-index: 1; /* ✅ FIX: keeps video behind */
+  z-index: 1;
+}
+
+/* ✅ NEW WRAPPER THAT FIXES THE COLLAPSE */
+.section-two-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 53px;
+  padding-bottom: 700px;
 }
 
 .section-two-content {
@@ -260,7 +267,7 @@ header.frame {
   position: absolute;
   left: 50%;
   transform: translateX(-254px);
-  top: 53px;
+  top: 0;
   margin: 0;
   text-align: justify;
   text-align-last: center;
@@ -277,7 +284,7 @@ header.frame {
   position: absolute;
   left: 50%;
   transform: translateX(-451px);
-  top: 187px;
+  top: 134px;
   margin: 0;
   text-align: justify;
   text-align-last: center;
