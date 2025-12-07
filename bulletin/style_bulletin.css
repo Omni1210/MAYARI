@@ -392,9 +392,7 @@ header.frame {
   text-decoration: none;
 }
 
-/* ===== SECTION THREE — Fullscreen Video Background ===== */
-
-/* ===== SECTION THREE — Fullscreen Video Background (Stays Centered) ===== */
+/* ===== SECTION THREE — Fullscreen Video Background (Locked to Viewport) ===== */
 
 .section-three {
   position: relative;
@@ -403,15 +401,15 @@ header.frame {
   overflow: hidden;
 }
 
-/* ✅ This forces the video to behave like background-size: cover */
+/* ✅ Video is sized to viewport, not the section */
 .section-three-video {
-  position: absolute;
+  position: fixed;        /* ✅ This is the key — locks video to viewport */
   top: 50%;
   left: 50%;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  transform: translate(-50%, -50%); /* ✅ Keeps video centered at all zoom levels */
+  transform: translate(-50%, -50%);
   z-index: -1;
   pointer-events: none;
 }
