@@ -612,8 +612,16 @@ header.frame {
 
 /*------------------------------Section 5-----------------------------------*/
 
-.section-five-heading {
+.section-five {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5; /* adjust to match your theme */
+}
+
+/* ✅ HEADLINE */
+.section-five-heading {
+  position: absolute;
   left: 84px;
   top: 75px;
 
@@ -629,8 +637,9 @@ header.frame {
   color: #ff6a00;
 }
 
+/* ✅ PARAGRAPH */
 .section-five-description {
-  position: relative;
+  position: absolute;
   left: 84px;
   top: 202px;
 
@@ -638,7 +647,7 @@ header.frame {
   height: 60px;
 
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-weight: 300; /* Light */
+  font-weight: 300;
   font-size: 14px;
   line-height: 145%;
   letter-spacing: 0.42px; /* 3% of 14px */
@@ -646,19 +655,19 @@ header.frame {
   color: #000000;
 }
 
-.section-five-right {
-  display: flex;
-  gap: 48px;
-  justify-content: center;
-  margin-top: 60px;
-}
+/* ✅ LOGO 1 — SolidWorks */
+.section-five-icon.logo-1 {
+  position: absolute;
+  left: 742px;
+  top: 55px;
 
-.section-five-icon {
   width: 137px;
   height: 137px;
+
   background-color: #ffffff;
-  border-radius: 40px;
+  border-radius: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -666,11 +675,33 @@ header.frame {
   gap: 12px;
 }
 
+/* ✅ LOGO 2 — Study Models */
+.section-five-icon.logo-2 {
+  position: absolute;
+  left: 1127px;
+  top: 55px;
+
+  width: 137px;
+  height: 137px;
+
+  background-color: #ffffff;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ✅ ICON IMAGE */
 .section-five-icon img {
   width: 64px;
   height: 64px;
 }
 
+/* ✅ LABEL */
 .section-five-label {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-size: 12px;
@@ -678,6 +709,8 @@ header.frame {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+}
+
 }
 
 
