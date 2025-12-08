@@ -489,12 +489,12 @@ header.frame {
 }
 
 .carousel-wrapper {
+  position: relative; /* REQUIRED */
   max-width: 1440px;
   margin: 0 auto;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden; /* remove scrollbars */
 }
+
 
 .carousel-track {
   display: flex;
