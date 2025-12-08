@@ -697,6 +697,14 @@ header.frame {
   text-align: center;
 }
 
+.logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+
 
 
 
