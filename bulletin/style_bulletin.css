@@ -613,15 +613,37 @@ header.frame {
 /*------------------------------Section 5-----------------------------------*/
 
 .section-five-heading {
+  position: relative;
+  left: 84px;
+  top: 75px;
+
+  width: 369px;
+  height: 49px;
+
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300; /* Light */
+  font-weight: 300;
   font-size: 24px;
   line-height: 145%;
   letter-spacing: 0.72px; /* 3% of 24px */
-  text-align: center;
+  text-align: left;
   color: #ff6a00;
-  width: 369px;
-  height: 49px;
-  margin: 0 auto;
 }
+
+.section-five-description {
+  position: relative;
+  left: 84px;
+  top: 202px;
+
+  width: 471px;
+  height: 60px;
+
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 14px;
+  line-height: 145%;
+  letter-spacing: 0.42px; /* 3% of 14px */
+  text-align: left;
+  color: #000000;
+}
+
 
