@@ -542,3 +542,35 @@ header.frame {
   font-size: 14px;
   opacity: 0.85;
 }
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel-arrow-img {
+  width: 32px;
+  height: auto;
+  filter: brightness(0) invert(1); /* makes it white if needed */
+}
+
+/* ✅ Positioning */
+.left-arrow {
+  left: -40px;
+}
+
+.right-arrow {
+  right: -40px;
+}
+
+/* ✅ Rotate left arrow 180° */
+.left-arrow .carousel-arrow-img {
+  transform: rotate(180deg);
+}
+
