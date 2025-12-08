@@ -219,66 +219,67 @@
 
 <script>
   const track = document.querySelector('.carousel-track');
-  let items = Array.from(document.querySelectorAll('.carousel-item'));
+  const originalItems = Array.from(document.querySelectorAll('.carousel-item'));
+
   const leftArrow = document.querySelector('.left-arrow');
   const rightArrow = document.querySelector('.right-arrow');
 
-  const cardWidth = 326 + 48;
+  const cardWidth = 326 + 48; // width + gap
+  const viewportWidth = window.innerWidth;
 
-  let index = 1;
+  // ✅ How many duplicates do we need?
+  const itemsPerScreen = Math.ceil(viewportWidth / cardWidth) + 2;
 
-  const firstClone = items[0].cloneNode(true);
-  const lastClone = items[items.length - 1].cloneNode(true);
+  // ✅ Build the infinite list
+  let items = [];
 
-  firstClone.id = "first-clone";
-  lastClone.id = "last-clone";
+  for (let i = 0; i < itemsPerScreen; i++) {
+    originalItems.forEach(item => {
+      const clone = item.cloneNode(true);
+      items.push(clone);
+      track.appendChild(clone);
+    });
+  }
 
-  track.appendChild(firstClone);
-  track.insertBefore(lastClone, items[0]);
+  // ✅ Start in the middle set
+  let index = originalItems.length * Math.floor(itemsPerScreen / 2);
 
-  // ✅ THIS LINE FIXES YOUR LOOP
-  items = Array.from(document.querySelectorAll('.carousel-item'));
-
+  // ✅ Position track
   track.style.transform = `translateX(${-cardWidth * index}px)`;
 
+  // ✅ Move right
   rightArrow.addEventListener('click', () => {
     index++;
     track.style.transition = "transform 0.4s ease";
     track.style.transform = `translateX(${-cardWidth * index}px)`;
+
+    // ✅ If too far right, shift back
+    if (index > items.length - originalItems.length * 2) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        index -= originalItems.length;
+        track.style.transform = `translateX(${-cardWidth * index}px)`;
+      }, 400);
+    }
   });
 
+  // ✅ Move left
   leftArrow.addEventListener('click', () => {
     index--;
     track.style.transition = "transform 0.4s ease";
     track.style.transform = `translateX(${-cardWidth * index}px)`;
+
+    // ✅ If too far left, shift forward
+    if (index < originalItems.length) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        index += originalItems.length;
+        track.style.transform = `translateX(${-cardWidth * index}px)`;
+      }, 400);
+    }
   });
-
-  track.addEventListener('transitionend', () => {
-  const currentItem = items[index];
-  if (!currentItem) return;
-
-  if (currentItem.id === "first-clone") {
-    track.style.transition = "none";
-    index = 1;
-    track.style.transform = `translateX(${-cardWidth * index}px)`;
-
-    requestAnimationFrame(() => {
-      track.style.transition = "transform 0.4s ease";
-    });
-  }
-
-  if (currentItem.id === "last-clone") {
-    track.style.transition = "none";
-    index = items.length - 2;
-    track.style.transform = `translateX(${-cardWidth * index}px)`;
-
-    requestAnimationFrame(() => {
-      track.style.transition = "transform 0.4s ease";
-    });
-  }
-});
-
 </script>
+
 
 
 </body>
