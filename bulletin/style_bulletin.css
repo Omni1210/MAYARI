@@ -680,14 +680,15 @@ header.frame {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* ✅ ensures no overflow */
+  overflow: hidden;
 }
 
 .section-five-icon img {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
 }
+
 
 }
 
