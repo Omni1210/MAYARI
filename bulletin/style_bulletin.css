@@ -490,19 +490,19 @@ header.frame {
 
 
 .carousel-wrapper {
-  position: relative; /* REQUIRED */
-  max-width: 1440px;
-  margin: 0 auto;
-  overflow: hidden; /* remove scrollbars */
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
 }
+
 
 
 .carousel-track {
   display: flex;
-  gap: 48px;
-  padding-bottom: 12px;
-  width: max-content; /* ✅ REQUIRED FOR SLIDING + LOOPING */
+  gap: 32px;
+  width: max-content;
 }
+
 
 
 .carousel-item {
