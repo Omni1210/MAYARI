@@ -655,35 +655,19 @@ header.frame {
   color: #000000;
 }
 
-/* ✅ LOGO 1 — SolidWorks */
-.section-five-icon.logo-1 {
+/* ✅ LOGO GROUP CONTAINER */
+.section-five-logos {
   position: absolute;
-  left: 742px;
   top: 55px;
-
-  width: 137px;
-  height: 137px;
-
-  background-color: #ffffff;
-  border-radius: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-
+  left: 742px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+  gap: 48px;
 }
 
-/* ✅ LOGO 2 — Study Models */
-.section-five-icon.logo-2 {
-  position: absolute;
-  left: 1127px;
-  top: 55px;
-
+/* ✅ LOGO BOXES */
+.section-five-icon {
   width: 137px;
   height: 137px;
-
   background-color: #ffffff;
   border-radius: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -711,7 +695,6 @@ header.frame {
   text-align: center;
 }
 
-}
 
 
 
