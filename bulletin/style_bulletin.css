@@ -180,11 +180,13 @@ header.frame {
 /* ===== CTA SECTION ===== */
 
 .cta-section {
+  text-align: center;
+  padding: 250px 0 160px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 
 
 .cta-text {
