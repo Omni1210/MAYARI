@@ -493,9 +493,12 @@ header.frame {
   position: relative;
   width: 100%;
   overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
 }
 
-
+.carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 
 .carousel-track {
   display: flex;
