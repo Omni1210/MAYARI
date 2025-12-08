@@ -500,7 +500,9 @@ header.frame {
   display: flex;
   gap: 48px;
   padding-bottom: 12px;
+  width: max-content; /* ✅ REQUIRED FOR SLIDING + LOOPING */
 }
+
 
 .carousel-item {
   flex: 0 0 auto;
