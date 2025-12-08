@@ -562,12 +562,13 @@ header.frame {
 
 /* ✅ Positioning */
 .left-arrow {
-  left: -40px;
+  left: 10px;   /* ✅ inside the wrapper */
 }
 
 .right-arrow {
-  right: -40px;
+  right: 10px;  /* ✅ inside the wrapper */
 }
+
 
 /* ✅ Rotate left arrow 180° */
 .left-arrow .carousel-arrow-img {
