@@ -254,18 +254,30 @@
   });
 
   track.addEventListener('transitionend', () => {
-    if (items[index].id === "first-clone") {
-      track.style.transition = "none";
-      index = 1;
-      track.style.transform = `translateX(${-cardWidth * index}px)`;
-    }
+  const currentItem = items[index];
+  if (!currentItem) return;
 
-    if (items[index].id === "last-clone") {
-      track.style.transition = "none";
-      index = items.length - 2;
-      track.style.transform = `translateX(${-cardWidth * index}px)`;
-    }
-  });
+  if (currentItem.id === "first-clone") {
+    track.style.transition = "none";
+    index = 1;
+    track.style.transform = `translateX(${-cardWidth * index}px)`;
+
+    requestAnimationFrame(() => {
+      track.style.transition = "transform 0.4s ease";
+    });
+  }
+
+  if (currentItem.id === "last-clone") {
+    track.style.transition = "none";
+    index = items.length - 2;
+    track.style.transform = `translateX(${-cardWidth * index}px)`;
+
+    requestAnimationFrame(() => {
+      track.style.transition = "transform 0.4s ease";
+    });
+  }
+});
+
 </script>
 
 
