@@ -492,7 +492,6 @@ header.frame {
   text-transform: uppercase;
 
   width: 252px;       /* ✅ matches Figma */
-  height: 35px;       /* ✅ matches Figma */
   margin: 0 auto 40px; /* ✅ centers + spacing */
 }
 
