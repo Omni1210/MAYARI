@@ -118,6 +118,7 @@ header.frame {
   z-index: 5;
   text-align: center;
   padding-top: 140px;
+  outline: 2px solid red;
 }
 
 .hero-title-wrapper {
