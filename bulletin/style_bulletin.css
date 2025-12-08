@@ -484,9 +484,10 @@ header.frame {
 .section-four {
   width: 100%;
   padding: 120px 40px;
-  background-color: #000000;
+  background-color: transparent;
   box-sizing: border-box;
 }
+
 
 .carousel-wrapper {
   position: relative; /* REQUIRED */
