@@ -492,7 +492,7 @@ header.frame {
   text-transform: uppercase;
 
   width: auto;       /* ✅ matches Figma */
-  margin: 0 auto 40px; /* ✅ centers + spacing */
+  margin: 40px auto 40px; /* ✅ centers + spacing */
 }
 
 .section-four {
