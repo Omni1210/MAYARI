@@ -659,7 +659,7 @@ header.frame {
   top: 55px;
   left: 742px;
   display: flex;
-  gap: 48px;
+  gap: 100px;
 }
 
 /* ✅ STACK BOX + LABEL */
