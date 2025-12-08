@@ -481,6 +481,21 @@ header.frame {
 
 /* ===== SECTION FOUR — CAROUSEL ===== */
 
+.section-four-heading {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 24px;
+  line-height: 145%;
+  letter-spacing: 0.72px; /* 3% of 24px */
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  width: 252px;       /* ✅ matches Figma */
+  height: 35px;       /* ✅ matches Figma */
+  margin: 0 auto 40px; /* ✅ centers + spacing */
+}
+
 .section-four {
   width: 100%;
   padding: 120px 40px;
