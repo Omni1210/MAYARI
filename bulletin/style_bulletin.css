@@ -676,15 +676,19 @@ header.frame {
   background-color: #ffffff;
   border-radius: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* ✅ ensures no overflow */
 }
 
 .section-five-icon img {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
+}
+
 }
 
 .logo-group {
