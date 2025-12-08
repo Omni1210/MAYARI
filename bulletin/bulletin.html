@@ -217,6 +217,56 @@
   </div>
 </section>
 
+<script>
+  const track = document.querySelector('.carousel-track');
+  let items = Array.from(document.querySelectorAll('.carousel-item'));
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+
+  const cardWidth = 326 + 48;
+
+  let index = 1;
+
+  const firstClone = items[0].cloneNode(true);
+  const lastClone = items[items.length - 1].cloneNode(true);
+
+  firstClone.id = "first-clone";
+  lastClone.id = "last-clone";
+
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, items[0]);
+
+  // ✅ THIS LINE FIXES YOUR LOOP
+  items = Array.from(document.querySelectorAll('.carousel-item'));
+
+  track.style.transform = `translateX(${-cardWidth * index}px)`;
+
+  rightArrow.addEventListener('click', () => {
+    index++;
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = `translateX(${-cardWidth * index}px)`;
+  });
+
+  leftArrow.addEventListener('click', () => {
+    index--;
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = `translateX(${-cardWidth * index}px)`;
+  });
+
+  track.addEventListener('transitionend', () => {
+    if (items[index].id === "first-clone") {
+      track.style.transition = "none";
+      index = 1;
+      track.style.transform = `translateX(${-cardWidth * index}px)`;
+    }
+
+    if (items[index].id === "last-clone") {
+      track.style.transition = "none";
+      index = items.length - 2;
+      track.style.transform = `translateX(${-cardWidth * index}px)`;
+    }
+  });
+</script>
 
 
 </body>
