@@ -610,3 +610,18 @@ header.frame {
   transform: rotate(180deg);
 }
 
+/*------------------------------Section 5-----------------------------------*/
+
+.section-five-heading {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 24px;
+  line-height: 145%;
+  letter-spacing: 0.72px; /* 3% of 24px */
+  text-align: center;
+  color: #ff6a00;
+  width: 369px;
+  height: 49px;
+  margin: 0 auto;
+}
+
