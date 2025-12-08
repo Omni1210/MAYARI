@@ -567,12 +567,22 @@ header.frame {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
+  background-color: rgba(255, 255, 255, 0.08); /* subtle white glow */
   border: none;
-  padding: 0;
+  padding: 12px;
+  border-radius: 50%; /* ✅ makes it a circle */
   cursor: pointer;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
+
+.carousel-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 
 .carousel-arrow-img {
   width: 32px;
