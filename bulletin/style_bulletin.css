@@ -611,30 +611,27 @@ header.frame {
 }
 
 /*------------------------------Section 5-----------------------------------*/
-
 .section-five {
   position: relative;
   width: 1440px;
   height: 317px;
   background-color: transparent;
-  margin: 0 auto; /* centers the section horizontally */
+  margin: 0 auto;
 }
-
 
 /* ✅ HEADLINE */
 .section-five-heading {
   position: absolute;
   left: 84px;
   top: 75px;
-
   width: 369px;
   height: 49px;
 
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 300; /* Light */
   font-size: 24px;
   line-height: 145%;
-  letter-spacing: 0.72px; /* 3% of 24px */
+  letter-spacing: 0.72px;
   text-align: left;
   color: #ff6a00;
 }
@@ -644,7 +641,6 @@ header.frame {
   position: absolute;
   left: 84px;
   top: 202px;
-
   width: 471px;
   height: 60px;
 
@@ -652,7 +648,7 @@ header.frame {
   font-weight: 300;
   font-size: 14px;
   line-height: 145%;
-  letter-spacing: 0.42px; /* 3% of 14px */
+  letter-spacing: 0.42px;
   text-align: left;
   color: #000000;
 }
@@ -666,6 +662,14 @@ header.frame {
   gap: 48px;
 }
 
+/* ✅ STACK BOX + LABEL */
+.logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
 /* ✅ LOGO BOXES */
 .section-five-icon {
   width: 137px;
@@ -675,10 +679,8 @@ header.frame {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
 }
 
 /* ✅ ICON IMAGE */
@@ -687,9 +689,10 @@ header.frame {
   height: 64px;
 }
 
-/* ✅ LABEL */
+/* ✅ LABEL — Tomorrow Light */
 .section-five-label {
   font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300; /* Light */
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -697,12 +700,6 @@ header.frame {
   text-align: center;
 }
 
-.logo-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
 
 
 
