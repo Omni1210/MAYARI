@@ -200,9 +200,10 @@ header.frame {
 }
 
 .cta-button-wrapper {
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
 
 .cta-button {
   display: inline-flex;
