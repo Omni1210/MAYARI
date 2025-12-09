@@ -900,5 +900,41 @@ header.frame {
   gap: 48px;
 }
 
+/*========== Identity Block ==========*/
+
+.section-seven-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.identity-title {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.identity-subtitle {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.identity-description {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.42px;
+  color: #ffffff;
+}
 
 
