@@ -742,12 +742,19 @@ header.frame {
 
 .section-six-heading {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.6px;
+  font-weight: 300; /* Light */
+  font-size: 24px;
+  line-height: 145%;
+  letter-spacing: 0.72px; /* 3% of 24px */
   text-transform: uppercase;
   color: #ff5f00;
+  width: 369px;
+  height: 49px;
+  position: absolute;
+  left: 76px;
+  top: 42px;
 }
+
 
 .feature-image-wrapper {
   width: 100%;
