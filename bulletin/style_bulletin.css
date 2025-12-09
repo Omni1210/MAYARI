@@ -748,6 +748,7 @@ header.frame {
   letter-spacing: 0.72px; /* 3% of 24px */
   text-transform: uppercase;
   color: #ff5f00;
+  margin-bottom: 30px; 
 }
 
 
