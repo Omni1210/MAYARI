@@ -751,6 +751,13 @@ header.frame {
   margin-bottom: 30px; 
 }
 
+.section-six-articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
 
 
 .feature-image-wrapper {
