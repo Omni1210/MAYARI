@@ -880,7 +880,7 @@ header.frame {
   color: #888888;
 }
 
-/*==============================Section 7=================================*/
+/*============================== Section 7 ==============================*/
 
 .section-seven {
   width: 100%;
@@ -900,7 +900,7 @@ header.frame {
   gap: 48px;
 }
 
-/*========== Identity Block ==========*/
+/*====================== Identity Block ======================*/
 
 .section-seven-identity {
   display: flex;
@@ -908,6 +908,18 @@ header.frame {
   align-items: flex-start;
   gap: 12px;
   max-width: 640px;
+}
+
+.identity-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.identity-logo {
+  width: 102px;
+  height: 102px;
+  object-fit: contain;
 }
 
 .identity-title {
@@ -936,5 +948,106 @@ header.frame {
   letter-spacing: 0.42px;
   color: #ffffff;
 }
+
+/*====================== Social Block ======================*/
+
+.section-seven-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.social-label {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+/* Replace these with your actual icon files */
+.social-icon.google    { background-image: url("../img/icon-google.png"); }
+.social-icon.linkedin  { background-image: url("../img/icon-linkedin.png"); }
+.social-icon.tiktok    { background-image: url("../img/icon-tiktok.png"); }
+.social-icon.instagram { background-image: url("../img/icon-instagram.png"); }
+.social-icon.facebook  { background-image: url("../img/icon-facebook.png"); }
+
+/*====================== Back to Top ======================*/
+
+.section-seven-backtotop {
+  margin-top: 8px;
+}
+
+.backtotop-btn {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*====================== Footer Bottom ======================*/
+
+.section-seven-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: #ffffff;
+}
+
+.footer-copy {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-col-title {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.footer-link {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 
