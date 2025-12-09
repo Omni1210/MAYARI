@@ -880,7 +880,25 @@ header.frame {
   color: #888888;
 }
 
+/*==============================Section 7=================================*/
 
+.section-seven {
+  width: 100%;
+  background-image: url("../img/bg-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+.section-seven-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 
 
 
