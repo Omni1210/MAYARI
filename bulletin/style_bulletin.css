@@ -789,7 +789,36 @@ header.frame {
   color: #888888;
 }
 
+
+.article-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
+
+.article-author-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.article-author {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  color: #888888;
+}
+
 
 
 
