@@ -714,6 +714,81 @@ header.frame {
   height: 140px;
 }
 
+/*==============================Section 6=================================*/
+
+.section-six {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.section-six-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  padding: 0 40px;
+}
+
+.article-block {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.article-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-date {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  color: #ff5f00;
+}
+
+.article-title {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.article-description {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.42px;
+  color: #000000;
+  text-align: justify;
+}
+
+.article-author {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  color: #888888;
+}
+
 
 
 
