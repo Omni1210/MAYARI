@@ -1005,12 +1005,23 @@ header.frame {
 }
 
 /*====================== Footer Bottom ======================*/
-
 .section-seven-bottom {
+  width: 100%;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  color: #ffffff;
+}
+
+.footer-left {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  color: #ffffff;
+  gap: 12px;
 }
 
 .footer-copy {
@@ -1020,7 +1031,17 @@ header.frame {
   letter-spacing: 0.36px;
 }
 
-.footer-columns {
+.backtotop-btn {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-right {
   display: flex;
   gap: 80px;
 }
@@ -1048,6 +1069,7 @@ header.frame {
   color: #ffffff;
   text-decoration: none;
 }
+
 
 
 
