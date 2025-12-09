@@ -932,8 +932,8 @@ header.frame {
   top: 0;
   right: 0;
 
-  width: 140px;   /* adjust size */
-  height: 140px;
+  width: 900px;   /* adjust size */
+  height: 900px;
 
   background-image: url("../img/white-MAYARI-logo-1.png");
   background-size: contain;
