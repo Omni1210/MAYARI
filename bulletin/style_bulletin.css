@@ -1007,15 +1007,14 @@ header.frame {
 /*====================== Footer Bottom ======================*/
 .section-seven-bottom {
   width: 100%;
+  color: #ffffff;
 }
 
 .footer-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 40px;
-  color: #ffffff;
 }
 
 .footer-left {
@@ -1043,7 +1042,8 @@ header.frame {
 
 .footer-right {
   display: flex;
-  gap: 80px;
+  gap: 64px; /* adjust to match Figma horizontally */
+  justify-content: flex-end;
 }
 
 .footer-col {
@@ -1069,7 +1069,6 @@ header.frame {
   color: #ffffff;
   text-decoration: none;
 }
-
 
 
 
