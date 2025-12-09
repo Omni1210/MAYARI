@@ -1028,8 +1028,8 @@ header.frame {
 .backtotop-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px; /* spacing between text and arrow */
-  padding: 10px 18px; /* button size */
+  gap: 6px;
+  padding: 10px 18px;
   background-color: #ffffff;
   color: #000000;
   border-radius: 4px;
@@ -1039,13 +1039,20 @@ header.frame {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 }
 
 .backtotop-btn::after {
-  content: "→";
-  font-size: 16px;
-  margin-left: 2px; /* fine‑tune arrow spacing */
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/arrow.png"); /* ✅ SAME ARROW AS SECTION 1 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
 }
+
 
 
 /*====================== Right Block Columns ======================*/
