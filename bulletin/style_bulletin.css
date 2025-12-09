@@ -982,11 +982,11 @@ header.frame {
 }
 
 /* Replace these with your actual icon files */
-.social-icon.google    { background-image: url("../img/icon-google.png"); }
-.social-icon.linkedin  { background-image: url("../img/icon-linkedin.png"); }
-.social-icon.tiktok    { background-image: url("../img/icon-tiktok.png"); }
-.social-icon.instagram { background-image: url("../img/icon-instagram.png"); }
-.social-icon.facebook  { background-image: url("../img/icon-facebook.png"); }
+.social-icon.google    { background-image: url("../img/google.png"); }
+.social-icon.linkedin  { background-image: url("../img/linkedin.png"); }
+.social-icon.tiktok    { background-image: url("../img/titok.png"); }
+.social-icon.instagram { background-image: url("../img/instagram.png"); }
+.social-icon.facebook  { background-image: url("../img/facebook.png"); }
 
 /*====================== Back to Top ======================*/
 
