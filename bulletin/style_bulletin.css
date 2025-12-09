@@ -1013,10 +1013,12 @@ header.frame {
 
 .section-seven-bottom {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;   /* stacks them vertically */
+  align-items: flex-start;  /* left aligned */
+  gap: 12px;                /* spacing between button + ©2025 */
   color: #ffffff;
 }
+
 
 .footer-copy {
   font-family: "Open Sans", Helvetica, sans-serif;
