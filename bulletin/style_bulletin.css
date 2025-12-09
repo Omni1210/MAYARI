@@ -1042,9 +1042,13 @@ header.frame {
 
 .footer-right {
   display: flex;
-  gap: 64px; /* adjust to match Figma horizontally */
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: flex-start;
+  gap: 80px; /* adjust spacing between the two columns */
+  width: auto;
 }
+
 
 .footer-col {
   display: flex;
