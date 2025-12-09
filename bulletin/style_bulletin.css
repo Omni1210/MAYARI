@@ -1028,7 +1028,7 @@ header.frame {
 .backtotop-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 6px; /* ✅ ONLY DIFFERENCE */
   padding: 10px 18px;
   background-color: #ffffff;
   color: #000000;
@@ -1039,20 +1039,18 @@ header.frame {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-decoration: none;
-  position: relative;
 }
 
 .backtotop-btn::after {
   content: "";
   width: 16px;
   height: 16px;
-  background-image: url("../img/arrow.png"); /* ✅ SAME ARROW AS SECTION 1 */
+  background-image: url("../img/arrow.png"); /* ✅ SAME ARROW PNG AS SECTION 1 */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
 }
-
 
 
 /*====================== Right Block Columns ======================*/
