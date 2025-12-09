@@ -1028,13 +1028,13 @@ header.frame {
 .backtotop-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px; /* ✅ ONLY DIFFERENCE */
+  gap: 6px;
   padding: 10px 18px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: transparent; /* ✅ transparent button */
+  color: #ffffff; /* ✅ white text */
   border-radius: 4px;
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 400; /* ✅ NOT thick anymore */
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
