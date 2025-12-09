@@ -881,6 +881,7 @@ header.frame {
 }
 
 /*============================== Section 7 ==============================*/
+/*============================== Section 7 ==============================*/
 
 .section-seven {
   width: 100%;
@@ -898,6 +899,27 @@ header.frame {
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+
+/*====================== TOP ROW ======================*/
+
+.section-seven-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
 }
 
 /*====================== Identity Block ======================*/
@@ -981,46 +1003,19 @@ header.frame {
   display: inline-block;
 }
 
-/* Replace these with your actual icon files */
 .social-icon.google    { background-image: url("../img/google.png"); }
 .social-icon.linkedin  { background-image: url("../img/linkedin.png"); }
 .social-icon.tiktok    { background-image: url("../img/tiktok.png"); }
 .social-icon.instagram { background-image: url("../img/instagram.png"); }
 .social-icon.facebook  { background-image: url("../img/facebook.png"); }
 
-/*====================== Back to Top ======================*/
+/*====================== Bottom Row ======================*/
 
-.section-seven-backtotop {
-  margin-top: 8px;
-}
-
-.backtotop-btn {
-  font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/*====================== Footer Bottom ======================*/
 .section-seven-bottom {
-  width: 100%;
-  color: #ffffff;
-}
-
-.footer-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  color: #ffffff;
 }
 
 .footer-copy {
@@ -1040,15 +1035,7 @@ header.frame {
   text-decoration: none;
 }
 
-.footer-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 80px; /* adjust spacing between the two columns */
-  width: auto;
-}
-
+/*====================== Right Block Columns ======================*/
 
 .footer-col {
   display: flex;
