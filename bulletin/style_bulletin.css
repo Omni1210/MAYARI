@@ -917,7 +917,12 @@ header.frame {
 }
 
 .right-block {
-  position: relative;
+  position: relative; /* needed for the pseudo-element */
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start; /* ✅ restores original alignment */
+  z-index: 1; /* ✅ ensures text stays above background */
 }
 
 .right-block::before {
@@ -925,14 +930,20 @@ header.frame {
   position: absolute;
   top: 0;
   right: 0;
-  width: 120px;
-  height: 120px;
+
+  width: 140px;   /* adjust size */
+  height: 140px;
+
   background-image: url("../img/white-MAYARI-logo-1.png");
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.15; /* ✅ watermark effect */
+  background-position: top right;
+
+  opacity: 0.12; /* ✅ watermark effect */
   pointer-events: none;
+  z-index: 0; /* ✅ ensures it stays behind everything */
 }
+
 
 
 /*====================== Identity Block ======================*/
