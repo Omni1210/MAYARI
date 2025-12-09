@@ -920,6 +920,7 @@ header.frame {
   position: relative; /* needed for the pseudo-element */
   display: flex;
   flex-direction: row;
+  background-color: transparent;
   gap: 80px;
   align-items: flex-start; /* ✅ restores original alignment */
   z-index: 1; /* ✅ ensures text stays above background */
