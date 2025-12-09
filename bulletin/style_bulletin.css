@@ -1030,16 +1030,18 @@ header.frame {
   align-items: center;
   gap: 6px;
   padding: 10px 18px;
-  background-color: transparent; /* ✅ transparent button */
-  color: #ffffff; /* ✅ white text */
+  background-color: transparent; /* transparent */
+  color: #ffffff; /* white text */
+  border: 1px solid #ffffff; /* ✅ white border */
   border-radius: 4px;
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-weight: 400; /* ✅ NOT thick anymore */
+  font-weight: 400; /* ✅ not thick */
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-decoration: none;
 }
+
 
 .backtotop-btn::after {
   content: "";
