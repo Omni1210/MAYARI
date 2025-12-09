@@ -917,14 +917,21 @@ header.frame {
 }
 
 .right-block {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  background-image: url("../img/white-MAYARI-logo-1.png"); /* ✅ your logo */
+  position: relative;
+}
+
+.right-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background-image: url("../img/white-MAYARI-logo-1.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: right top; /* ✅ logo sits on the right side */
-  background-size: 1061px; /* adjust size as needed */
-  padding-right: 1061px; /* ✅ creates space so text doesn't overlap the logo */
+  opacity: 0.15; /* ✅ watermark effect */
+  pointer-events: none;
 }
 
 
