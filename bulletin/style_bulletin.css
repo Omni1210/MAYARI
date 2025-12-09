@@ -748,12 +748,8 @@ header.frame {
   letter-spacing: 0.72px; /* 3% of 24px */
   text-transform: uppercase;
   color: #ff5f00;
-  width: 369px;
-  height: 49px;
-  position: absolute;
-  left: 76px;
-  top: 42px;
 }
+
 
 
 .feature-image-wrapper {
