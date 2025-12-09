@@ -1062,7 +1062,7 @@ header.frame {
 .footer-col {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 28px;
 }
 
 .footer-col-title {
