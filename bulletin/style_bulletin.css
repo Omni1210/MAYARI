@@ -17,6 +17,17 @@ header.frame {
   z-index: 10;
 }
 
+/* ===== STICKY HEADER (ON SCROLL) ===== */
+header.frame.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(20, 20, 20, 0.55);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
 /* ===== LEFT DATE PILL ===== */
 
 .nav-wrapper {
