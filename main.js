@@ -26,7 +26,7 @@ function updateCountdown() {
 }
 
 // ✅ Fetch launch data from backend
-fetch("http://localhost:3000/api/next-launch")
+fetch("https://YOUR-RENDER-URL.onrender.com/api/next-launch")
   .then(res => res.json())
   .then(data => {
     console.log("Next Launch:", data);
