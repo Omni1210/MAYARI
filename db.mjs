@@ -1,9 +1,9 @@
 import mysql from "mysql2/promise";
 
 export const db = await mysql.createConnection({
-  host: "sql12.freesqldatabase.com",
-  user: "sql12811398",
-  password: "YOUR_PASSWORD_HERE", // wait for it to finish loading
-  database: "sql12811398",
-  port: 3306
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: parseInt(process.env.DB_PORT)
 });
