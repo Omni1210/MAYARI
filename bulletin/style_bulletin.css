@@ -118,6 +118,11 @@ header.frame.sticky {
   height: 48px;
 }
 
+.launch-countdown {
+  font-size: 11px;
+  line-height: 145%;
+}
+
 /* ===== HERO BACKGROUND SECTION ===== */
 
 .hero {
