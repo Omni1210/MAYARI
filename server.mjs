@@ -1,5 +1,5 @@
 import express from "express";
-import nextLaunchRoute from "./next-launch.js";
+import nextLaunchRoute from "./next-launch.mjs";
 
 const app = express();
 
@@ -13,3 +13,4 @@ app.use("/api", nextLaunchRoute);
 app.listen(3000, () => {
   console.log("OMNI backend running on http://localhost:3000");
 });
+
