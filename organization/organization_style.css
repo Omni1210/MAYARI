@@ -118,7 +118,9 @@ header.frame.sticky {
 
 
 
-
+main {
+  margin-top: 160px; /* adjust this number until it matches your Figma */
+}
 
 .org-columns {
   display: flex;
