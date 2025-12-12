@@ -175,13 +175,14 @@ body {
   color: #dddddd;
   margin-bottom: 24px;
   text-align: justify;
+  flex: 0 0 30%;
 }
 
 
 
 
 .right-column {
-  flex: 1 1 40%;
+  flex: 0 0 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
