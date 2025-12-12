@@ -108,7 +108,7 @@ header.frame.sticky {
   gap: 20px;
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 13px;        /* ✅ unified font size */
   line-height: 145%;
   letter-spacing: 0.39px;
   text-transform: uppercase;
@@ -118,7 +118,7 @@ header.frame.sticky {
 }
 
 .launch-countdown {
-  font-size: 10px;
+  /* ✅ remove font-size override */
 }
 
 
