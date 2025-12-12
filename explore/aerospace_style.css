@@ -211,6 +211,51 @@ body {
   max-width: 700px;
 }
 
+
+
+/* ===== BOTTOM SECTION ===== */
+.bottom-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 60px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-graphic {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.right-text {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.right-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 3%;
+  color: #dddddd;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
 /* ===== FOOTER BUTTON ===== */
 .footer-section {
   text-align: center;
@@ -228,3 +273,4 @@ body {
   letter-spacing: 0.4px;
   display: inline-block;
 }
+
