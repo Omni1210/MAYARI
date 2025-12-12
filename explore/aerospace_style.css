@@ -137,8 +137,8 @@ body {
   color: #FF5F00;
   margin-bottom: 12px;
   text-align: left;
-  white-space: nowrap; /* ✅ forces the title onto one line */
-  overflow: visible;   /* ✅ allows it to extend past the column */
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .hero-subtitle {
@@ -154,19 +154,16 @@ body {
   margin-bottom: 24px;
 }
 
-
-
 /* ===== CONTENT GRID ===== */
 .content-grid {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* ✅ forces both columns to start at the same top line */
+  align-items: flex-start;
   gap: 48px;
   padding: 40px 48px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 .left-column p {
   font-family: "Open Sans", sans-serif;
@@ -182,7 +179,7 @@ body {
 
 .left-column {
   flex: 0 0 40%;
-  padding-top: 160px; /* adjust 20–80px depending on taste */
+  padding-top: 160px;
 }
 
 .right-column {
@@ -211,9 +208,19 @@ body {
   max-width: 700px;
 }
 
+/* ===== BOTTOM SECTION WRAPPER (FULL WIDTH) ===== */
+.bottom-wrapper {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #2B2B2B 0%,
+    #1A1A1A 40%,
+    #0D0D0D 70%,
+    #000000 100%
+  );
+}
 
-
-/* ===== BOTTOM SECTION ===== */
+/* ===== BOTTOM SECTION CONTENT ===== */
 .bottom-grid {
   display: flex;
   flex-direction: row;
@@ -222,14 +229,6 @@ body {
   padding: 60px 48px;
   max-width: 1200px;
   margin: 0 auto;
-
-  background: linear-gradient(
-    to bottom,
-    #2B2B2B 0%,
-    #1A1A1A 40%,
-    #0D0D0D 70%,
-    #000000 100%
-  );
 }
 
 .left-graphic {
@@ -281,4 +280,3 @@ body {
   letter-spacing: 0.4px;
   display: inline-block;
 }
-
