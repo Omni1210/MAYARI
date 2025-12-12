@@ -1,3 +1,22 @@
+/* ===== HEADER CONTAINER ===== */
+
+.frame {
+  display: flex;
+  align-items: center;
+  height: 81px;
+  padding: 0 24px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+header.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 /* ===== STICKY HEADER (ON SCROLL) ===== */
 header.frame.sticky {
   position: fixed;
