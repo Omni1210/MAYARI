@@ -263,10 +263,11 @@ body {
   margin-bottom: 24px;
 }
 
-/* ===== FOOTER BUTTON ===== */
-.footer-section {
+
+.bottom-button-wrapper {
+  width: 100%;
   text-align: center;
-  padding: 60px 0;
+  padding: 40px 0 60px; /* adjust if you want more/less spacing */
 }
 
 .back-button {
@@ -274,11 +275,12 @@ body {
   font-size: 13px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: transparent;   /* ✅ fully transparent */
+  background-color: transparent;   /* transparent background */
   padding: 12px 32px;
   border-radius: 40px;
   letter-spacing: 0.4px;
   display: inline-block;
-  border: 1px solid #ffffff;       /* ✅ clean white border */
+  border: 1px solid #ffffff;       /* white border */
 }
+
 
