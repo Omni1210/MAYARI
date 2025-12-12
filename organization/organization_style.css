@@ -118,12 +118,9 @@ header.frame.sticky {
 
 /* MAIN WRAPPER */
 .org-content {
-  width: 650px;
-  height: 150px;
+  max-width: 1200px;
   margin: 160px auto 0;
   padding: 0 48px;
-  box-sizing: border-box;
-  overflow: hidden; /* optional: prevents overflow if content exceeds height */
 }
 
 /* HEADER ROW: LOGO + HEADING */
