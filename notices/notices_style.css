@@ -169,8 +169,8 @@ header.frame.sticky {
 .notice-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
+  font-weight: 300;
+  color: #000000;
   line-height: 1.5;
   margin-bottom: 16px;
 }
@@ -178,13 +178,29 @@ header.frame.sticky {
 /* BODY TEXT */
 .notice-body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 15px;
   line-height: 2;
   letter-spacing: 0.3px;
-  color: #dddddd;
+  color: #000000;
   text-align: justify;
 }
+
+/* ROW: LOGO + NOTICES HEADING */
+.notices-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* spacing between logo and text */
+  margin-bottom: 16px;
+}
+
+/* LOGO BESIDE NOTICES */
+.notices-logo {
+  width: 58px;
+  height: 59px;
+  object-fit: contain;
+}
+
 
 /* LAST NOTICE: REMOVE EXTRA GAP BELOW LINE IF YOU WANT IT TIGHTER */
 /* optional */
