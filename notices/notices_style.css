@@ -116,24 +116,45 @@ header.frame.sticky {
   /* intentionally empty */
 }
 
-/* ===== NOTICES PAGE CONTENT ===== */
+/* -----------------------------MAIN WRAPPER FOR NOTICES PAGE---------------------------- */
 .notices-content {
   max-width: 1200px;
   margin: 160px auto 0;
   padding: 0 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
 }
 
-/* ===== INDIVIDUAL NOTICE BLOCK ===== */
+/* PAGE TITLE: "NOTICES" */
+.notices-heading {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+  margin-bottom: 16px;
+}
+
+/* TOP LINE UNDER HEADING */
+.notices-heading-line {
+  width: 100%;
+  height: 1px;
+  background-color: #555555;
+  margin-bottom: 40px;
+}
+
+/* LIST WRAPPER FOR ALL NOTICES */
+.notices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* INDIVIDUAL NOTICE BLOCK */
 .notice-block {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #555555; /* line between notices */
 }
 
-/* ===== NOTICE DATE ===== */
+/* DATE */
 .notice-date {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-size: 14px;
@@ -141,24 +162,33 @@ header.frame.sticky {
   text-transform: uppercase;
   color: #FF5F00;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
-/* ===== NOTICE TITLE ===== */
+/* TITLE */
 .notice-title {
   font-family: "Tomorrow", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #ffffff;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
-/* ===== NOTICE BODY TEXT ===== */
+/* BODY TEXT */
 .notice-body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 2;
   letter-spacing: 0.3px;
   color: #dddddd;
   text-align: justify;
 }
+
+/* LAST NOTICE: REMOVE EXTRA GAP BELOW LINE IF YOU WANT IT TIGHTER */
+/* optional */
+.notices-list .notice-block:last-child {
+  margin-bottom: 0;
+}
+
