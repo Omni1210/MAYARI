@@ -181,12 +181,12 @@ body {
 }
 
 .left-column {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   padding-top: 40px; /* adjust 20–80px depending on taste */
 }
 
 .right-column {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
