@@ -179,6 +179,20 @@ main.org-section {
   max-width: 650px;
 }
 
+.org-diamonds {
+  display: flex;
+  justify-content: center;
+  gap: 12px;            /* adjust spacing between diamonds */
+  margin: 16px 0 24px;  /* space above/below the row of diamonds */
+}
+
+.org-diamonds .diamond {
+  width: 6px;
+  height: 6px;
+  background-color: #000000; /* black diamonds */
+  transform: rotate(45deg);  /* make them look like diagonal dots */
+}
+
 
 
 
