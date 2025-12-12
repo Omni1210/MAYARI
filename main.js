@@ -1,8 +1,7 @@
-let launchDate = null; // will be set after API loads
+// ✅ Hardcoded launch date (dynamic countdown still works)
+let launchDate = new Date("2025-12-21T15:00:00Z");
 
 function updateCountdown() {
-    if (!launchDate) return; // wait until API provides the date
-
     const now = new Date();
     const diff = launchDate - now;
 
@@ -25,37 +24,6 @@ function updateCountdown() {
     countdownEl.textContent = `T- ${days} DAYS ${h}:${m}:${s}`;
 }
 
-// ✅ Fetch launch data from backend
-fetch("https://YOUR-RENDER-URL.onrender.com/api/next-launch")
-  .then(res => res.json())
-  .then(data => {
-    console.log("Next Launch:", data);
-
-    // ✅ Extract the object correctly
-    const launch = data.nextLaunch;
-
-    // ✅ Update UI (only if these elements exist)
-    if (document.getElementById("mission"))
-      document.getElementById("mission").textContent = launch.mission_name;
-
-    if (document.getElementById("rocket"))
-      document.getElementById("rocket").textContent = launch.rocket_name;
-
-    if (document.getElementById("launch-site"))
-      document.getElementById("launch-site").textContent = launch.launch_site;
-
-    // ✅ Set launchDate for countdown
-    launchDate = new Date(launch.launch_date);
-
-    // ✅ Show formatted date
-    if (document.getElementById("launch-date"))
-      document.getElementById("launch-date").textContent =
-        launchDate.toLocaleString();
-
-    // ✅ Start countdown immediately
-    updateCountdown();
-  })
-  .catch(err => console.error("API error:", err));
-
 // ✅ Update every second
 setInterval(updateCountdown, 1000);
+updateCountdown();
