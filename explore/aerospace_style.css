@@ -175,11 +175,11 @@ body {
   color: #dddddd;
   margin-bottom: 24px;
   text-align: justify;
-  flex: 0 0 30%;
 }
 
-
-
+.left-column {
+  flex: 0 0 30%;
+}
 
 .right-column {
   flex: 0 0 70%;
