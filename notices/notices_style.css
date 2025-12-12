@@ -115,3 +115,50 @@ header.frame.sticky {
 .launch-countdown {
   /* intentionally empty */
 }
+
+/* ===== NOTICES PAGE CONTENT ===== */
+.notices-content {
+  max-width: 1200px;
+  margin: 160px auto 0;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ===== INDIVIDUAL NOTICE BLOCK ===== */
+.notice-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===== NOTICE DATE ===== */
+.notice-date {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FF5F00;
+  letter-spacing: 0.4px;
+}
+
+/* ===== NOTICE TITLE ===== */
+.notice-title {
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+/* ===== NOTICE BODY TEXT ===== */
+.notice-body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  color: #dddddd;
+  text-align: justify;
+}
