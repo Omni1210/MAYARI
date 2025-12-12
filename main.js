@@ -5,10 +5,12 @@ function updateCountdown() {
     const now = new Date();
     const diff = launchDate - now;
 
-    const countdownEl = document.getElementById("launchCountdown");
+    const el1 = document.getElementById("launchCountdown");
+    const el2 = document.getElementById("launchCountdown2");
 
     if (diff <= 0) {
-        countdownEl.textContent = "LAUNCHED";
+        if (el1) el1.textContent = "LAUNCHED";
+        if (el2) el2.textContent = "LAUNCHED";
         return;
     }
 
@@ -21,13 +23,17 @@ function updateCountdown() {
     const m = minutes.toString().padStart(2, "0");
     const s = seconds.toString().padStart(2, "0");
 
-    countdownEl.textContent = `T- ${days} DAYS ${h}:${m}:${s}`;
+    const text = `T‑${days} DAYS ${h}:${m}:${s} UNTIL LAUNCH`;
+
+    if (el1) el1.textContent = text;
+    if (el2) el2.textContent = text;
 }
 
 // ✅ Update every second
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
+// ✅ Sticky header
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header.frame");
   if (window.scrollY > 10) {
@@ -36,4 +42,3 @@ window.addEventListener("scroll", () => {
     header.classList.remove("sticky");
   }
 });
-
