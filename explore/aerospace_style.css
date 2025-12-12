@@ -150,22 +150,11 @@ body {
   letter-spacing: 3%;
   color: #f0f0f0;
   text-align: left;
-  max-width: 470px;
+  max-width: 500px;
   margin-bottom: 24px;
 }
 
-.hero-subtitle p {
-  font-family: "Tomorrow", Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 145%;
-  letter-spacing: 3%;
-  color: #f0f0f0;
-  text-align: left;
-  max-width: 470px;
-  margin-bottom: 24px;
-}
+
 
 /* ===== CONTENT GRID ===== */
 .content-grid {
@@ -188,6 +177,7 @@ body {
   color: #dddddd;
   margin-bottom: 24px;
   text-align: justify;
+  max-width: 470px;
 }
 
 .left-column {
