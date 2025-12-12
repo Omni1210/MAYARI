@@ -173,6 +173,9 @@ body {
   color: #dddddd;
   margin-bottom: 24px;
   text-align: justify;
+  flex: 1 1 55%;
+  padding-top: 120px; /* ✅ aligns with rocket */
+}
 }
 
 
