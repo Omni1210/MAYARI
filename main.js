@@ -31,18 +31,26 @@ fetch("https://YOUR-RENDER-URL.onrender.com/api/next-launch")
   .then(data => {
     console.log("Next Launch:", data);
 
-    // ✅ Update UI
-    document.getElementById("mission").textContent = data.mission;
-    document.getElementById("rocket").textContent = data.rocket;
-    document.getElementById("agency").textContent = data.agency;
-    document.getElementById("launch-site").textContent = data.launch_site;
+    // ✅ Extract the object correctly
+    const launch = data.nextLaunch;
+
+    // ✅ Update UI (only if these elements exist)
+    if (document.getElementById("mission"))
+      document.getElementById("mission").textContent = launch.mission_name;
+
+    if (document.getElementById("rocket"))
+      document.getElementById("rocket").textContent = launch.rocket_name;
+
+    if (document.getElementById("launch-site"))
+      document.getElementById("launch-site").textContent = launch.launch_site;
 
     // ✅ Set launchDate for countdown
-    launchDate = new Date(data.launch_date);
+    launchDate = new Date(launch.launch_date);
 
     // ✅ Show formatted date
-    document.getElementById("launch-date").textContent =
-      launchDate.toLocaleString();
+    if (document.getElementById("launch-date"))
+      document.getElementById("launch-date").textContent =
+        launchDate.toLocaleString();
 
     // ✅ Start countdown immediately
     updateCountdown();
