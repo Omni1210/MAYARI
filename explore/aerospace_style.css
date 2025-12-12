@@ -133,18 +133,26 @@ body {
   font-size: 40px;
   line-height: 145%;
   letter-spacing: 3%;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: 200;
+  color: #FF5F00;
   margin-bottom: 12px;
+  text-align: left;
 }
 
 .hero-subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-family: "Tomorrow", Helvetica, sans-serif;
+  font-style: italic;
   font-weight: 300;
+  font-size: 20px;
+  line-height: 145%;
+  letter-spacing: 3%;
   color: #f0f0f0;
-  letter-spacing: 0.5px;
+  text-align: left;
+  max-width: 466px;
+  margin-bottom: 24px;
 }
+
+
 
 /* ===== CONTENT GRID ===== */
 .content-grid {
@@ -156,13 +164,18 @@ body {
   margin: 0 auto;
 }
 
-.left-column {
-  flex: 1 1 55%;
+.left-column p {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2; /* ✅ exact line spacing of 2 */
+  letter-spacing: 3%;
   color: #dddddd;
+  margin-bottom: 24px;
+  text-align: justify;
 }
+
+
 
 .right-column {
   flex: 1 1 40%;
