@@ -182,7 +182,7 @@ body {
 
 .left-column {
   flex: 0 0 40%;
-  padding-top: 80px; /* adjust 20–80px depending on taste */
+  padding-top: 160px; /* adjust 20–80px depending on taste */
 }
 
 .right-column {
