@@ -125,7 +125,7 @@ main {
 
 .org-columns {
   display: flex;
-  gap: 32px;
+  gap: 25px;
 }
 
 .org-left {
@@ -146,6 +146,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-top: 40px;
 }
 
 .org-heading {
