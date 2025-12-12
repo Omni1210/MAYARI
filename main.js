@@ -27,3 +27,13 @@ function updateCountdown() {
 // ✅ Update every second
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header.frame");
+  if (window.scrollY > 10) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+});
+
