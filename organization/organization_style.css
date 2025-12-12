@@ -123,12 +123,22 @@ header.frame.sticky {
   padding: 0 48px;
 }
 
-/* HEADER ROW: LOGO + HEADING */
-.org-header-row {
+/* ============================
+   TWO-COLUMN LAYOUT
+   ============================ */
+.org-columns {
   display: flex;
-  align-items: center;
-  gap: 32px;
-  margin-bottom: 16px;
+  gap: 25px;
+}
+
+/* ============================
+   LEFT COLUMN — LOGO
+   ============================ */
+.org-left {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .org-logo {
@@ -137,48 +147,35 @@ header.frame.sticky {
   object-fit: contain;
 }
 
-/* HEADING TEXT */
+/* ============================
+   RIGHT COLUMN — HEADING + TEXT
+   ============================ */
+.org-right {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ============================
+   HEADING
+   ============================ */
 .org-heading {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 400;
   color: #FF5F00;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .org-heading .highlight {
   font-weight: 700;
 }
 
-/* DIVIDER LINE */
-.org-divider-line {
-  width: 100%;
-  height: 1px;
-  background-color: #555555;
-  margin: 32px 0;
-}
-
-/* TWO-COLUMN LAYOUT */
-.org-columns {
-  display: flex;
-  gap: 48px;
-}
-
-.org-left {
-  flex: 0 0 40%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.org-right {
-  flex: 0 0 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-/* BODY TEXT */
+/* ============================
+   BODY TEXT
+   ============================ */
 .org-body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -187,6 +184,5 @@ header.frame.sticky {
   letter-spacing: 0.3px;
   color: #000000;
   text-align: justify;
-}
 
 
