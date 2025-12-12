@@ -116,24 +116,15 @@ header.frame.sticky {
   /* intentionally empty */
 }
 
-/* MAIN WRAPPER */
-.org-content {
-  max-width: 1200px;
-  margin: 160px auto 0;
-  padding: 0 48px;
-}
 
-/* ============================
-   TWO-COLUMN LAYOUT
-   ============================ */
+
+
+
 .org-columns {
   display: flex;
-  gap: 25px;
+  gap: 32px;
 }
 
-/* ============================
-   LEFT COLUMN — LOGO
-   ============================ */
 .org-left {
   flex: 0 0 40%;
   display: flex;
@@ -147,9 +138,6 @@ header.frame.sticky {
   object-fit: contain;
 }
 
-/* ============================
-   RIGHT COLUMN — HEADING + TEXT
-   ============================ */
 .org-right {
   flex: 0 0 60%;
   display: flex;
@@ -157,9 +145,6 @@ header.frame.sticky {
   gap: 16px;
 }
 
-/* ============================
-   HEADING
-   ============================ */
 .org-heading {
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-size: 32px;
@@ -173,9 +158,6 @@ header.frame.sticky {
   font-weight: 700;
 }
 
-/* ============================
-   BODY TEXT
-   ============================ */
 .org-body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -184,5 +166,7 @@ header.frame.sticky {
   letter-spacing: 0.3px;
   color: #000000;
   text-align: justify;
+}
+
 
 
