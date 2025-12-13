@@ -373,16 +373,39 @@ main.org-section {
   margin-top: 4px; /* tiny breathing room */
 }
 
+/* ================================
+   SIDEBAR BUTTON RESET + INTERACTION
+================================ */
+
 .sidebar-item {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
   font-family: "Tomorrow", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #252525;
 
-  /* ✅ spacing above and below */
+  /* spacing above and below */
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
+/* ================================
+   ACTIVE STATE (CLICKED ITEM)
+================================ */
+
+.sidebar-item.active {
+  color: #FF5F00;
+  font-weight: 600;
+  background-color: #f7f7f7;
+  border-left: 3px solid #FF5F00;
+  padding-left: 12px; /* slight indent */
+}
+
 
 /* ================================
    LINE UNDER EVERY TITLE + ITEM
