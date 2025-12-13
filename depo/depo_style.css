@@ -176,6 +176,12 @@ header.frame.sticky {
   background: transparent;
 }
 
+.depot-order-block {
+  padding: 20px 0;        /* ✅ vertical breathing room */
+  background: transparent;
+}
+
+
 /* STEPS TO ORDER */
 .depot-steps {
   margin-bottom: 24px;
