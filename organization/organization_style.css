@@ -314,5 +314,155 @@ main.org-section {
   letter-spacing: 0.3px;
 }
 
+/* ================================
+   EXEC SECTION WRAPPER
+================================ */
+
+.exec-section {
+  padding-top: 120px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.exec-container {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  gap: 40px;
+}
+
+
+/* ================================
+   LEFT SIDEBAR (20%)
+================================ */
+
+.exec-sidebar {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-title {
+  font-family: "Tomorrow", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #FF5F00;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-item {
+  font-family: "Tomorrow", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #252525;
+}
+
+.sidebar-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dcdcdc;
+}
+
+
+/* ================================
+   RIGHT CONTENT (80%)
+================================ */
+
+.exec-content {
+  flex: 0 0 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.exec-heading {
+  font-family: "Tomorrow", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FF5F00;
+  letter-spacing: 0.5px;
+}
+
+.exec-body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #252525;
+  line-height: 1.9;
+  text-align: justify;
+  max-width: 900px;
+}
+
+
+/* ================================
+   EXECUTIVE GRID (3 × 4)
+================================ */
+
+.exec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 40px 30px;
+}
+
+
+/* ================================
+   EXECUTIVE CARD (300W × 400H)
+================================ */
+
+.exec-card {
+  width: 300px;
+  height: 400px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   PHOTO (267 × 267)
+================================ */
+
+.exec-photo {
+  width: 267px;
+  height: 267px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ================================
+   POSITION + NAME
+================================ */
+
+.exec-position {
+  margin-top: 12px;
+  font-family: "Tomorrow", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FF5F00;
+  text-align: center;
+}
+
+.exec-name {
+  margin-top: 4px;
+  font-family: "Tomorrow", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #252525;
+  text-align: center;
+}
+
+
 
 
