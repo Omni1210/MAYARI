@@ -117,13 +117,13 @@ header.frame.sticky {
   height: 48px;
 }
 
-.launch-countdown {
-  /* no font-size override */
-}
+.launch-countdown {}
 
 /* Push the entire launches content downward */
 .main-content {
   margin-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* ===========================
@@ -156,9 +156,10 @@ body.launches-page {
   justify-content: center;
   gap: 60px;
   margin-top: 30px;
-  position: relative; /* needed for the line */
+  position: relative;
 }
 
+/* ✅ Vertical white separator line */
 .launch-time-wrapper::before {
   content: "";
   position: absolute;
@@ -166,18 +167,19 @@ body.launches-page {
   top: 0;
   width: 1px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.25); /* ✅ subtle white line */
+  background-color: rgba(255, 255, 255, 0.25);
   transform: translateX(-50%);
 }
 
+/* ✅ Expanded, less congested time blocks */
 .time-block {
   background: rgba(255, 255, 255, 0.08);
-  padding: 16px 32px;
+  padding: 20px 40px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  min-width: 220px;
+  gap: 16px;
+  min-width: 300px; /* ✅ longer container */
   text-align: left;
 }
 
@@ -191,7 +193,7 @@ body.launches-page {
 .time-block .day,
 .time-block .date {
   font-family: 'Tomorrow', sans-serif;
-  font-weight: 400;       /* Regular */
+  font-weight: 400;
   font-size: 14px;
   color: #FFFFFF;
 }
@@ -205,11 +207,15 @@ body.launches-page {
   overflow-x: auto;
   margin-top: 50px;
   padding-bottom: 40px;
-  scrollbar-width: none; /* Firefox */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  scrollbar-width: none;
 }
 
 .launch-strip::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 /* ===========================
@@ -221,7 +227,7 @@ body.launches-page {
   background: rgba(0, 0, 0, 0.35);
   border-radius: 6px;
   overflow: hidden;
-  margin: 0; /* NO GAPS */
+  margin: 0;
 }
 
 /* ===========================
