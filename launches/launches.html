@@ -17,7 +17,6 @@
 <body class="launches-page">
   <div class="launches-overlay"></div>
 
-
   <!-- ✅ HEADER -->
   <header class="frame">
     <div class="nav-wrapper">
@@ -45,33 +44,43 @@
     </div>
   </header>
 
-
   <!-- ✅ MAIN CONTENT -->
   <main class="main-content">
 
     <!-- SECTION TITLE -->
     <h1 class="section-title">UPCOMING LAUNCHES</h1>
 
-    <!-- TIME BLOCKS -->
-    <div class="time-blocks">
-      <div class="time-box">
-        <span class="time-label">UTC</span>
-        <span class="time-value" id="utcTime"></span>
+    <!-- ✅ NEW UTC + PHT TIME SECTION -->
+    <div class="launch-time-wrapper">
+
+      <!-- UTC BLOCK -->
+      <div class="time-block utc-block">
+        <div class="row">
+          <span class="time">15:10:24 PM</span>
+          <span class="zone">UTC</span>
+        </div>
+        <div class="row">
+          <span class="day">FRIDAY</span>
+          <span class="date">DECEMBER 05, 2025</span>
+        </div>
       </div>
 
-      <div class="time-box">
-        <span class="time-label">PHT</span>
-        <span class="time-value" id="phtTime"></span>
+      <!-- PHT BLOCK -->
+      <div class="time-block pht-block">
+        <div class="row">
+          <span class="time">23:10:24 PM</span>
+          <span class="zone">PHT</span>
+        </div>
+        <div class="row">
+          <span class="day">FRIDAY</span>
+          <span class="date">DECEMBER 05, 2025</span>
+        </div>
       </div>
+
     </div>
+    <!-- ✅ END TIME SECTION -->
 
-      <div class="time-box">
-        <span class="time-label">PHT</span>
-        <span class="time-value" id="phtTime"></span>
-      </div>
-    </div>
-
-    <!-- ✅ HORIZONTAL LAUNCH STRIP (NO GAPS) -->
+    <!-- ✅ HORIZONTAL LAUNCH STRIP -->
     <div class="launch-strip">
 
       <!-- 1 — Galileo FOC FM33‑FM34 -->
@@ -153,6 +162,7 @@
         <div class="launch-site">Cape Canaveral SLC‑40</div>
         <div class="launch-status">ACTIVE</div>
       </div>
+
     </div>
 
   </main>
