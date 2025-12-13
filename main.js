@@ -63,16 +63,16 @@ const categories = {
     organization.`,
     members: [
       { name: "Cejay Cena", position: "President", photo: "../img/executives/president.png" },
-      { name: "Ahron Martinez", position: "Vice President for Internal Affairs", photo: "img/executives/vp-internal.png" },
-      { name: "Keith Humprey Uaje", position: "Vice President for External Affairs", photo: "img/executives/vp-external.png" },
-      { name: "Lanz Pelaga", position: "Secretary", photo: "img/executives/secretary.png" },
-      { name: "Janjohn Ryan Catibog", position: "Treasurer", photo: "img/executives/treasurer.png" },
-      { name: "Irish Mercado", position: "Assistant Treasurer", photo: "img/executives/asst-treasurer.png" },
-      { name: "Franz Angeline Austria", position: "Auditor", photo: "img/executives/auditor.png" },
-      { name: "Avriel Raine Arellano", position: "Business Manager 1", photo: "img/executives/business1.png" },
-      { name: "Gian Maverick Estiandan", position: "Business Manager 2", photo: "img/executives/business2.png" },
-      { name: "Chezka Mae Nuñez", position: "P.R.O. 1", photo: "img/executives/pro1.png" },
-      { name: "Ma. Lia Isobel Aligada", position: "P.R.O. 2", photo: "img/executives/pro2.png" }
+      { name: "Ahron Martinez", position: "Vice President for Internal Affairs", photo: "../img/executives/vp-internal.png" },
+      { name: "Keith Humprey Uaje", position: "Vice President for External Affairs", photo: "../img/executives/vp-external.png" },
+      { name: "Lanz Pelaga", position: "Secretary", photo: "../img/executives/secretary.png" },
+      { name: "Janjohn Ryan Catibog", position: "Treasurer", photo: "../img/executives/treasurer.png" },
+      { name: "Irish Mercado", position: "Assistant Treasurer", photo: "../img/executives/asst-treasurer.png" },
+      { name: "Franz Angeline Austria", position: "Auditor", photo: "../img/executives/auditor.png" },
+      { name: "Avriel Raine Arellano", position: "Business Manager 1", photo: "../img/executives/business1.png" },
+      { name: "Gian Maverick Estiandan", position: "Business Manager 2", photo: "../img/executives/business2.png" },
+      { name: "Chezka Mae Nuñez", position: "P.R.O. 1", photo: "../img/executives/pro1.png" },
+      { name: "Ma. Lia Isobel Aligada", position: "P.R.O. 2", photo: "../img/executives/pro2.png" }
     ]
   },
 
@@ -83,15 +83,15 @@ const categories = {
     that promote academic excellence and student welfare. They also serve as the bridge
     between the students and the faculty in addressing academic-related concerns.`,
     members: [
-      { name: "Jay Hannah Dela Cruz", position: "AWC COMMITTEE HEAD", photo: "img/academic/awc-committee-head.png" },
-      { name: "Drexian Ramirez", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-1.png" },
-      { name: "EJ - John Kyle Garcia", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-2.png" },
-      { name: "Rona Astrodomo", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-3.png" },
-      { name: "Mystan Dann Fabelloen", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-4.png" },
-      { name: "Ranz Ivann Hortaleza", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-5.png" },
-      { name: "John Benedict Lumyk", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-6.png" },
-      { name: "Kirby Tamesis", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-7.png" },
-      { name: "Azalia Lux", position: "AWC COMMITTEE MEMBER", photo: "img/academic/awc-committee-member-8.png" }
+      { name: "Jay Hannah Dela Cruz", position: "AWC COMMITTEE HEAD", photo: "../img/academic/awc-committee-head.png" },
+      { name: "Drexian Ramirez", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-1.png" },
+      { name: "EJ - John Kyle Garcia", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-2.png" },
+      { name: "Rona Astrodomo", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-3.png" },
+      { name: "Mystan Dann Fabelloen", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-4.png" },
+      { name: "Ranz Ivann Hortaleza", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-5.png" },
+      { name: "John Benedict Lumyk", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-6.png" },
+      { name: "Kirby Tamesis", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-7.png" },
+      { name: "Azalia Lux", position: "AWC COMMITTEE MEMBER", photo: "../img/academic/awc-committee-member-8.png" }
     ]
   },
 
@@ -102,12 +102,12 @@ const categories = {
     promotion of their activities and shall be responsible for answering queries in the
     official accounts of the organization.`,
     members: [
-      { name: "Jhet Ashley Santos", position: "PIC COMMITTEE HEAD", photo: "img/publicinfo/pic-committee-head.png" },
-      { name: "Angela Sophia Cabral", position: "PIC COMMITTEE MEMBER", photo: "img/publicinfo/pic-committee-member-1.png" },
-      { name: "LN Nicol Castillo", position: "PIC COMMITTEE MEMBER", photo: "img/publicinfo/pic-committee-member-2.png" },
-      { name: "Myanne Valene De Asis", position: "PIC COMMITTEE MEMBER", photo: "img/publicinfo/pic-committee-member-3.png" },
-      { name: "Marianne Charisse Magnayi", position: "PIC COMMITTEE MEMBER", photo: "img/publicinfo/pic-committee-member-4.png" },
-      { name: "Stanley Jacob Pasia", position: "PIC COMMITTEE MEMBER", photo: "img/publicinfo/pic-committee-member-5.png" }
+      { name: "Jhet Ashley Santos", position: "PIC COMMITTEE HEAD", photo: "../img/publicinfo/pic-committee-head.png" },
+      { name: "Angela Sophia Cabral", position: "PIC COMMITTEE MEMBER", photo: "../img/publicinfo/pic-committee-member-1.png" },
+      { name: "LN Nicol Castillo", position: "PIC COMMITTEE MEMBER", photo: "../img/publicinfo/pic-committee-member-2.png" },
+      { name: "Myanne Valene De Asis", position: "PIC COMMITTEE MEMBER", photo: "../img/publicinfo/pic-committee-member-3.png" },
+      { name: "Marianne Charisse Magnayi", position: "PIC COMMITTEE MEMBER", photo: "../img/publicinfo/pic-committee-member-4.png" },
+      { name: "Stanley Jacob Pasia", position: "PIC COMMITTEE MEMBER", photo: "../img/publicinfo/pic-committee-member-5.png" }
     ]
   },
 
@@ -117,12 +117,12 @@ const categories = {
     organization a strategic and expert oversight of short and long-term financial plans,
     operational issues, financial risks, and budgetary decisions.`,
     members: [
-      { name: "Richmond Alexander Resuello", position: "FINANCE COMMITTEE HEAD", photo: "img/finance/finance-committee-head.png" },
-      { name: "Mark Andrew Cabile", position: "FINANCE COMMITTEE MEMBER", photo: "img/finance/finance-committee-member-1.png" },
-      { name: "Joshua Andrei Doctora", position: "FINANCE COMMITTEE MEMBER", photo: "img/finance/finance-committee-member-2.png" },
-      { name: "Louie Alyzza Gerona", position: "FINANCE COMMITTEE MEMBER", photo: "img/finance/finance-committee-member-3.png" },
-      { name: "Angel Mae Lobo", position: "FINANCE COMMITTEE MEMBER", photo: "img/finance/finance-committee-member-4.png" },
-      { name: "Bianca Eloise Pocamas", position: "FINANCE COMMITTEE MEMBER", photo: "img/finance/finance-committee-member-5.png" }
+      { name: "Richmond Alexander Resuello", position: "FINANCE COMMITTEE HEAD", photo: "../img/finance/finance-committee-head.png" },
+      { name: "Mark Andrew Cabile", position: "FINANCE COMMITTEE MEMBER", photo: "../img/finance/finance-committee-member-1.png" },
+      { name: "Joshua Andrei Doctora", position: "FINANCE COMMITTEE MEMBER", photo: "../img/finance/finance-committee-member-2.png" },
+      { name: "Louie Alyzza Gerona", position: "FINANCE COMMITTEE MEMBER", photo: "../img/finance/finance-committee-member-3.png" },
+      { name: "Angel Mae Lobo", position: "FINANCE COMMITTEE MEMBER", photo: "../img/finance/finance-committee-member-4.png" },
+      { name: "Bianca Eloise Pocamas", position: "FINANCE COMMITTEE MEMBER", photo: "../img/finance/finance-committee-member-5.png" }
     ]
   },
 
@@ -132,16 +132,16 @@ const categories = {
     the productions such as lights, sounds, and other technical needs. They also help
     with the setup and teardown of the stage and other equipment.`,
     members: [
-      { name: "Kyla Chrisly Balsote", position: "TECHNICAL COMMITTEE HEAD", photo: "img/technical/technical-committee-head.png" },
-      { name: "Drianne Andrei Alcantara", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-1.png" },
-      { name: "Janrick Kayne Caringal", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-2.png" },
-      { name: "Gian Jazhiel Crisologo", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-3.png" },
-      { name: "Jeremy Emmanuelle Engay", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-4.png" },
-      { name: "Joelle Kim Judacna", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-5.png" },
-      { name: "Nathaniel Macapagal", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-6.png" },
-      { name: "Lamuel Nikko Aguilar Magnayon", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-7.png" },
-      { name: "Kim Allyson Soliva", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-8.png" },
-      { name: "Charles Roland Tamlang", position: "TECHNICAL COMMITTEE MEMBER", photo: "img/technical/technical-committee-member-9.png" }
+      { name: "Kyla Chrisly Balsote", position: "TECHNICAL COMMITTEE HEAD", photo: "../img/technical/technical-committee-head.png" },
+      { name: "Drianne Andrei Alcantara", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-1.png" },
+      { name: "Janrick Kayne Caringal", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-2.png" },
+      { name: "Gian Jazhiel Crisologo", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-3.png" },
+      { name: "Jeremy Emmanuelle Engay", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-4.png" },
+      { name: "Joelle Kim Judacna", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-5.png" },
+      { name: "Nathaniel Macapagal", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-6.png" },
+      { name: "Lamuel Nikko Aguilar Magnayon", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-7.png" },
+      { name: "Kim Allyson Soliva", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-8.png" },
+      { name: "Charles Roland Tamlang", position: "TECHNICAL COMMITTEE MEMBER", photo: "../img/technical/technical-committee-member-9.png" }
     ]
   },
 
@@ -153,11 +153,11 @@ const categories = {
     reduction plans, aiding in the monitoring and evaluation of DRRM activities, and
     assisting in the coordination of DRRM programs and services within the school.`,
     members: [
-      { name: "Alyzza Camille Comia", position: "DRRM COMMITTEE HEAD", photo: "img/drrm/drrm-committee-head.png" },
-      { name: "Emilio Raphael Azcué", position: "DRRM COMMITTEE MEMBER", photo: "img/drrm/drrm-committee-member-1.png" },
-      { name: "Aaron Bacarro", position: "DRRM COMMITTEE MEMBER", photo: "img/drrm/drrm-committee-member-2.png" },
-      { name: "Richter Castillo", position: "DRRM COMMITTEE MEMBER", photo: "img/drrm/drrm-committee-member-3.png" },
-      { name: "Franco Zacharias De Guzman", position: "DRRM COMMITTEE MEMBER", photo: "img/drrm/drrm-committee-member-4.png" }
+      { name: "Alyzza Camille Comia", position: "DRRM COMMITTEE HEAD", photo: "../img/drrm/drrm-committee-head.png" },
+      { name: "Emilio Raphael Azcué", position: "DRRM COMMITTEE MEMBER", photo: "../img/drrm/drrm-committee-member-1.png" },
+      { name: "Aaron Bacarro", position: "DRRM COMMITTEE MEMBER", photo: "../img/drrm/drrm-committee-member-2.png" },
+      { name: "Richter Castillo", position: "DRRM COMMITTEE MEMBER", photo: "../img/drrm/drrm-committee-member-3.png" },
+      { name: "Franco Zacharias De Guzman", position: "DRRM COMMITTEE MEMBER", photo: "../img/drrm/drrm-committee-member-4.png" }
     ]
   },
 
@@ -167,19 +167,19 @@ const categories = {
     classes. They are responsible for communicating student concerns, organizing class
     activities, and fostering a positive learning environment.`,
     members: [
-      { name: "Kevin Florence Osis", position: "1101 REPRESENTATIVE", photo: "img/classreps/1101.png" },
-      { name: "Jhakelle Ree Avecin", position: "1102 REPRESENTATIVE", photo: "img/classreps/1102.png" },
-      { name: "Kisha Pineda", position: "1103 REPRESENTATIVE", photo: "img/classreps/1103.png" },
-      { name: "Jarmal Jack Vickman", position: "1104 REPRESENTATIVE", photo: "img/classreps/1104.png" },
-      { name: "Zander Vincent Guile", position: "1105 REPRESENTATIVE", photo: "img/classreps/1105.png" },
-      { name: "Karylle Enzhayn Umali", position: "2101 REPRESENTATIVE", photo: "img/classreps/2101-1.png" },
-      { name: "John Kenneth Samson", position: "2101 REPRESENTATIVE", photo: "img/classreps/2101-2.png" },
-      { name: "Yuja Karlo Alabanan", position: "2102 REPRESENTATIVE", photo: "img/classreps/2102-1.png" },
-      { name: "Christine Kare Cusa", position: "2102 REPRESENTATIVE", photo: "img/classreps/2102-2.png" },
-      { name: "Chad Kenne Marcelo", position: "3103 REPRESENTATIVE", photo: "img/classreps/3103.png" },
-      { name: "Jon Denzel Almonte", position: "4101 REPRESENTATIVE", photo: "img/classreps/4101.png" },
-      { name: "Gabrielle Siast", position: "4102 REPRESENTATIVE", photo: "img/classreps/4102.png" },
-      { name: "Portia Mae Allasas", position: "4103 REPRESENTATIVE", photo: "img/classreps/4103.png" }
+      { name: "Kevin Florence Osis", position: "1101 REPRESENTATIVE", photo: "../img/classreps/1101.png" },
+      { name: "Jhakelle Ree Avecin", position: "1102 REPRESENTATIVE", photo: "../img/classreps/1102.png" },
+      { name: "Kisha Pineda", position: "1103 REPRESENTATIVE", photo: "../img/classreps/1103.png" },
+      { name: "Jarmal Jack Vickman", position: "1104 REPRESENTATIVE", photo: "../img/classreps/1104.png" },
+      { name: "Zander Vincent Guile", position: "1105 REPRESENTATIVE", photo: "../img/classreps/1105.png" },
+      { name: "Karylle Enzhayn Umali", position: "2101 REPRESENTATIVE", photo: "../img/classreps/2101-1.png" },
+      { name: "John Kenneth Samson", position: "2101 REPRESENTATIVE", photo: "../img/classreps/2101-2.png" },
+      { name: "Yuja Karlo Alabanan", position: "2102 REPRESENTATIVE", photo: "../img/classreps/2102-1.png" },
+      { name: "Christine Kare Cusa", position: "2102 REPRESENTATIVE", photo: "../img/classreps/2102-2.png" },
+      { name: "Chad Kenne Marcelo", position: "3103 REPRESENTATIVE", photo: "../img/classreps/3103.png" },
+      { name: "Jon Denzel Almonte", position: "4101 REPRESENTATIVE", photo: "../img/classreps/4101.png" },
+      { name: "Gabrielle Siast", position: "4102 REPRESENTATIVE", photo: "../img/classreps/4102.png" },
+      { name: "Portia Mae Allasas", position: "4103 REPRESENTATIVE", photo: "../img/classreps/4103.png" }
     ]
   }
 
