@@ -120,3 +120,153 @@ header.frame.sticky {
 .launch-countdown {
   /* ✅ remove font-size override */
 }
+
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+.section-title {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+
+
+/* ===========================
+   TIME BLOCKS
+=========================== */
+.time-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.time-label {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.time-value {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 20px;
+  color: #00FF22;
+  display: block;
+  margin-top: 6px;
+}
+
+
+
+/* ===========================
+   HORIZONTAL LAUNCH STRIP
+   (NO GAPS BETWEEN CARDS)
+=========================== */
+.launch-strip {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.launch-strip::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+
+
+/* ===========================
+   LAUNCH CARD
+=========================== */
+.launch-card {
+  width: 200px;
+  flex: 0 0 auto;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0; /* NO GAPS */
+}
+
+
+
+/* ===========================
+   LAUNCH DATE
+=========================== */
+.launch-date {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+
+
+/* ===========================
+   IMAGE
+=========================== */
+.launch-image {
+  width: 200px;
+  height: 390px;
+  object-fit: cover;
+}
+
+
+
+/* ===========================
+   PAYLOAD NAME
+=========================== */
+.payload-name {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 14px;
+  color: #D9D9D9;
+  padding: 10px 10px 0 10px;
+}
+
+
+
+/* ===========================
+   ROCKET NAME
+=========================== */
+.rocket-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 4px 10px 0 10px;
+}
+
+
+
+/* ===========================
+   LAUNCH SITE
+=========================== */
+.launch-site {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 4px 10px 0 10px;
+}
+
+
+
+/* ===========================
+   STATUS
+=========================== */
+.launch-status {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 10px;
+  color: #00FF22;
+  padding: 8px 10px 12px 10px;
+}
+
