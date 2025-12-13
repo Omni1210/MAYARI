@@ -211,6 +211,16 @@ body.launches-page {
   margin: 0; /* NO GAPS */
 }
 
+/* ===========================
+   DARK OVERLAY (PAGE-SPECIFIC)
+=========================== */
+.launches-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* adjust darkness here */
+  pointer-events: none; /* content stays fully interactive */
+  z-index: -1; /* sits behind all content */
+}
 
 
 /* ===========================
