@@ -177,8 +177,9 @@ header.frame.sticky {
 }
 
 .depot-order-block {
-  padding: 20px 0;        /* ✅ vertical breathing room */
-  background: transparent;
+  padding: 20px 10px;
+  background: rgba(37, 37, 37, 0.05); /* ✅ 5% opacity of #252525 */
+  border-radius: 6px;                 /* optional but looks clean */
 }
 
 
