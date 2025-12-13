@@ -508,6 +508,18 @@ main.org-section {
   text-align: center;
 }
 
+.exec-card {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.exec-card.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 
 
