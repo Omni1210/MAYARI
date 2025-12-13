@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,7 +42,104 @@
       </div>
     </div>
   </header>
-  
- <script src="../main.js"></script>
+
+
+  <!-- ✅ MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- SECTION TITLE -->
+    <h1 class="section-title">UPCOMING LAUNCHES</h1>
+
+    <!-- TIME BLOCKS -->
+    <div class="time-blocks">
+      <div class="time-box">
+        <span class="time-label">UTC</span>
+        <span class="time-value" id="utcTime"></span>
+      </div>
+
+      <div class="time-box">
+        <span class="time-label">PHT</span>
+        <span class="time-value" id="phtTime"></span>
+      </div>
+    </div>
+
+    <!-- ✅ HORIZONTAL LAUNCH STRIP (NO GAPS) -->
+    <div class="launch-strip">
+
+      <!-- 1 — Galileo FOC FM33‑FM34 -->
+      <div class="launch-card">
+        <div class="launch-date">DECEMBER 16, 2025</div>
+        <img src="../img/launch1.png" class="launch-image" alt="Launch Image">
+        <div class="payload-name">GALILEO FOC FM33‑FM34</div>
+        <div class="rocket-name">Ariane 62</div>
+        <div class="launch-site">Kourou ELA‑4</div>
+        <div class="launch-status">ACTIVE</div>
+      </div>
+
+      <!-- 2 — Starlink Group 11‑39 -->
+      <div class="launch-card">
+        <div class="launch-date">DECEMBER 20, 2025</div>
+        <img src="../img/launch2.png" class="launch-image" alt="Launch Image">
+        <div class="payload-name">Starlink Group 11‑39</div>
+        <div class="rocket-name">Falcon 9 Block 5</div>
+        <div class="launch-site">Vandenberg SLC‑4E</div>
+        <div class="launch-status">ACTIVE</div>
+      </div>
+
+      <!-- 3 — Transporter‑14 -->
+      <div class="launch-card">
+        <div class="launch-date">DECEMBER 22, 2025</div>
+        <img src="../img/launch3.png" class="launch-image" alt="Launch Image">
+        <div class="payload-name">Transporter‑14</div>
+        <div class="rocket-name">Falcon 9 Block 5</div>
+        <div class="launch-site">Cape Canaveral SLC‑40</div>
+        <div class="launch-status">ACTIVE</div>
+      </div>
+
+      <!-- 4 — HTV‑X3 -->
+      <div class="launch-card">
+        <div class="launch-date">DECEMBER 27, 2025</div>
+        <img src="../img/launch4.png" class="launch-image" alt="Launch Image">
+        <div class="payload-name">HTV‑X3</div>
+        <div class="rocket-name">H‑III</div>
+        <div class="launch-site">Tanegashima Yoshinobu‑2</div>
+        <div class="launch-status">ACTIVE</div>
+      </div>
+
+      <!-- 5 — USSF‑96 -->
+      <div class="launch-card">
+        <div class="launch-date">JANUARY 5, 2026</div>
+        <img src="../img/launch5.png" class="launch-image" alt="Launch Image">
+        <div class="payload-name">USSF‑96</div>
+        <div class="rocket-name">Falcon Heavy</div>
+        <div class="launch-site">Kennedy LC‑39A</div>
+        <div class="launch-status">ACTIVE</div>
+      </div>
+
+      <!-- 6 — Blue Ring Demo -->
+      <div class="launch-card">
+        <div class="launch-date">JANUARY 12, 2026</div>
+        <img src="../img/launch6.png" class="launch-image" alt="Launch Image">
+        <div class="payload-name">Blue Ring Demo Flight</div>
+        <div class="rocket-name">New Glenn</div>
+        <div class="launch-site">Cape Canaveral LC‑36</div>
+        <div class="launch-status">ACTIVE</div>
+      </div>
+
+      <!-- 7 — Dream Chaser CRS‑3 -->
+      <div class="launch-card">
+        <div class="launch-date">JANUARY 18, 2026</div>
+        <img src="../img/launch7.png" class="launch-image" alt="Launch Image">
+        <div class="payload-name">Dream Chaser CRS‑3</div>
+        <div class="rocket-name">Vulcan Centaur</div>
+        <div class="launch-site">Cape Canaveral SLC‑41</div>
+        <div class="launch-status">ACTIVE</div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="../main.js"></script>
 </body>
 </html>
