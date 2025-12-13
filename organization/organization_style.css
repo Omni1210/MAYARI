@@ -207,7 +207,7 @@ main.org-section {
 
 .org-adviser-columns {
   display: flex;
-  gap: 60px; /* spacing between left and right columns */
+  gap: 90px; /* spacing between left and right columns */
   align-items: flex-start; /* ensures adviser name aligns with quote */
   max-width: 1200px;
   width: 100%;
@@ -221,7 +221,7 @@ main.org-section {
 .adviser-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* ✅ centers photo + labels */
 }
 
 .adviser-photo {
@@ -233,6 +233,8 @@ main.org-section {
 
 .adviser-info {
   margin-top: 16px;
+  text-align: center;
+  width: 100%;
 }
 
 .adviser-label {
@@ -289,7 +291,9 @@ main.org-section {
 .adviser-quote-block {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* ✅ centers quote + author */
+  text-align: center;
+  width: 100%;
 }
 
 .adviser-quote {
