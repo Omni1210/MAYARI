@@ -231,8 +231,10 @@ body.launches-page {
   font-size: 10px;
   color: #FFFFFF;
   padding: 10px;
+  text-align: center;        /* ✅ centers the date */
+  width: 100%;               /* ✅ ensures full card width */
+  display: block;            /* ✅ guarantees centering works */
 }
-
 
 
 /* ===========================
