@@ -73,7 +73,7 @@ header.frame.sticky {
   background-color: #2b2b2b99;
   border-radius: 40px;
   padding: 12px 32px;
-  height: 48px; /* or whatever exact height matches your design */
+  height: 48px;
   display: flex;
   align-items: center;
 }
@@ -108,7 +108,7 @@ header.frame.sticky {
   gap: 20px;
   font-family: "Tomorrow", Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 13px;        /* ✅ unified font size */
+  font-size: 13px;
   line-height: 145%;
   letter-spacing: 0.39px;
   text-transform: uppercase;
@@ -118,19 +118,13 @@ header.frame.sticky {
 }
 
 .launch-countdown {
-  /* ✅ remove font-size override */
+  /* no font-size override */
 }
-
-
-
-
 
 /* Push the entire launches content downward */
 .main-content {
-  margin-top: 60px;   /* adjust this number to taste */
+  margin-top: 60px;
 }
-
-
 
 /* ===========================
    PAGE-SPECIFIC BACKGROUND
@@ -143,8 +137,6 @@ body.launches-page {
   background-attachment: fixed;
 }
 
-
-
 /* ===========================
    SECTION TITLE
 =========================== */
@@ -156,44 +148,44 @@ body.launches-page {
   margin-left: 40px;
 }
 
-
-
 /* ===========================
-   TIME BLOCKS
+   LAUNCH TIME HEADER (UTC + PHT)
 =========================== */
-.time-blocks {
+.launch-time-wrapper {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;              /* space between UTC and PHT blocks */
   margin-top: 30px;
 }
 
-.time-box {
+.time-block {
   background: rgba(255, 255, 255, 0.08);
-  padding: 16px 24px;
+  padding: 16px 32px;
   border-radius: 8px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 220px;
+  text-align: left;
 }
 
-.time-label {
+.time-block .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-block .time,
+.time-block .zone,
+.time-block .day,
+.time-block .date {
   font-family: 'Tomorrow', sans-serif;
+  font-weight: 400;       /* Regular */
   font-size: 14px;
   color: #FFFFFF;
 }
 
-.time-value {
-  font-family: 'Tomorrow', sans-serif;
-  font-size: 20px;
-  color: #00FF22;
-  display: block;
-  margin-top: 6px;
-}
-
-
-
 /* ===========================
    HORIZONTAL LAUNCH STRIP
-   (NO GAPS BETWEEN CARDS)
 =========================== */
 .launch-strip {
   display: flex;
@@ -208,8 +200,6 @@ body.launches-page {
   display: none; /* Chrome/Safari */
 }
 
-
-
 /* ===========================
    LAUNCH CARD
 =========================== */
@@ -223,16 +213,15 @@ body.launches-page {
 }
 
 /* ===========================
-   DARK OVERLAY (PAGE-SPECIFIC)
+   DARK OVERLAY
 =========================== */
 .launches-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* adjust darkness here */
-  pointer-events: none; /* content stays fully interactive */
-  z-index: -1; /* sits behind all content */
+  background: rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  z-index: -1;
 }
-
 
 /* ===========================
    LAUNCH DATE
@@ -242,11 +231,10 @@ body.launches-page {
   font-size: 10px;
   color: #FFFFFF;
   padding: 10px;
-  text-align: center;        /* ✅ centers the date */
-  width: 100%;               /* ✅ ensures full card width */
-  display: block;            /* ✅ guarantees centering works */
+  text-align: center;
+  width: 100%;
+  display: block;
 }
-
 
 /* ===========================
    IMAGE
@@ -256,8 +244,6 @@ body.launches-page {
   height: 390px;
   object-fit: cover;
 }
-
-
 
 /* ===========================
    PAYLOAD NAME
@@ -269,8 +255,6 @@ body.launches-page {
   padding: 10px 10px 0 10px;
 }
 
-
-
 /* ===========================
    ROCKET NAME
 =========================== */
@@ -280,8 +264,6 @@ body.launches-page {
   color: #FFFFFF;
   padding: 4px 10px 0 10px;
 }
-
-
 
 /* ===========================
    LAUNCH SITE
@@ -293,8 +275,6 @@ body.launches-page {
   padding: 4px 10px 0 10px;
 }
 
-
-
 /* ===========================
    STATUS
 =========================== */
@@ -304,4 +284,3 @@ body.launches-page {
   color: #00FF22;
   padding: 8px 10px 12px 10px;
 }
-
