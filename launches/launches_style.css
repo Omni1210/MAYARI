@@ -121,6 +121,18 @@ header.frame.sticky {
   /* ✅ remove font-size override */
 }
 
+/* ===========================
+   PAGE-SPECIFIC BACKGROUND
+=========================== */
+body.launches-page {
+  background-image: url('../img/bgL.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
 
 /* ===========================
    SECTION TITLE
