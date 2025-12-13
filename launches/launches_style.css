@@ -17,7 +17,7 @@ header.frame {
   z-index: 10;
 }
 
-/* ===== STICKY HEADER (ON SCROLL) ===== */
+/* ===== STICKY HEADER ===== */
 header.frame.sticky {
   position: fixed;
   top: 0;
@@ -57,7 +57,7 @@ header.frame.sticky {
   white-space: nowrap;
 }
 
-/* ===== CENTER PILL ===== */
+/* ===== CENTER NAV ===== */
 
 .center-nav {
   flex: 1;
@@ -117,21 +117,20 @@ header.frame.sticky {
   height: 48px;
 }
 
-.launch-countdown {}
+/* ===== MAIN CONTENT (FULL BLEED) ===== */
 
-/* Push the entire launches content downward */
-.main-content {
-  margin-top: 60px;
-  padding-left: 0;
-  padding-right: 0;
-  width: 100vw;
-  overflow-x: hidden;
+main.main-content {
+  margin: 0;
+  padding: 0;
+  width: 100vw;          /* ✅ full viewport width */
+  overflow-x: hidden;    /* ✅ prevents unwanted scrollbars */
 }
 
-/* ===========================
-   PAGE-SPECIFIC BACKGROUND
-=========================== */
+/* ===== BACKGROUND ===== */
+
 body.launches-page {
+  margin: 0;             /* ✅ remove browser default margin */
+  padding: 0;
   background-image: url('../img/bgL.png');
   background-size: cover;
   background-position: center;
@@ -139,20 +138,20 @@ body.launches-page {
   background-attachment: fixed;
 }
 
-/* ===========================
-   SECTION TITLE
-=========================== */
+/* ===== SECTION TITLE ===== */
+
 .section-title {
   font-family: 'Tomorrow', sans-serif;
   font-size: 36px;
   color: #FFFFFF;
   margin-top: 60px;
-  margin-left: 40px;
+  margin-left: 40px;     /* ✅ keep title indented */
 }
 
 /* ===========================
-   LAUNCH TIME HEADER (UTC + PHT)
+   UTC + PHT TIME BLOCKS
 =========================== */
+
 .launch-time-wrapper {
   display: flex;
   justify-content: center;
@@ -161,7 +160,7 @@ body.launches-page {
   position: relative;
 }
 
-/* Vertical white separator line */
+/* vertical separator */
 .launch-time-wrapper::before {
   content: "";
   position: absolute;
@@ -173,7 +172,7 @@ body.launches-page {
   transform: translateX(-50%);
 }
 
-/* Expanded, less congested time blocks */
+/* expanded blocks */
 .time-block {
   background: rgba(255, 255, 255, 0.08);
   padding: 20px 40px;
@@ -201,20 +200,17 @@ body.launches-page {
 }
 
 /* ===========================
-   HORIZONTAL LAUNCH STRIP
+   FULL-BLEED LAUNCH STRIP
 =========================== */
+
 .launch-strip {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin-top: 50px;
-  padding-bottom: 40px;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0;             /* ✅ no margins */
+  padding: 0;            /* ✅ no padding */
+  width: 100vw;          /* ✅ full viewport width */
   scrollbar-width: none;
-  width: 100vw;
 }
 
 .launch-strip::-webkit-scrollbar {
@@ -222,20 +218,22 @@ body.launches-page {
 }
 
 /* ===========================
-   LAUNCH CARD
+   LAUNCH CARD (LOCKED WIDTH)
 =========================== */
+
 .launch-card {
   width: 200px;
-  flex: 0 0 200px;
+  flex: 0 0 200px;       /* ✅ prevents flex resizing */
   background: rgba(0, 0, 0, 0.35);
   border-radius: 6px;
   overflow: hidden;
-  margin: 0;
+  margin: 0;             /* ✅ cards touch edges */
 }
 
 /* ===========================
    DARK OVERLAY
 =========================== */
+
 .launches-overlay {
   position: fixed;
   inset: 0;
@@ -245,8 +243,9 @@ body.launches-page {
 }
 
 /* ===========================
-   LAUNCH DATE
+   CARD CONTENT
 =========================== */
+
 .launch-date {
   font-family: 'Tomorrow', sans-serif;
   font-size: 10px;
@@ -257,18 +256,12 @@ body.launches-page {
   display: block;
 }
 
-/* ===========================
-   IMAGE
-=========================== */
 .launch-image {
   width: 200px;
   height: 390px;
   object-fit: cover;
 }
 
-/* ===========================
-   PAYLOAD NAME
-=========================== */
 .payload-name {
   font-family: 'Tomorrow', sans-serif;
   font-size: 14px;
@@ -276,19 +269,7 @@ body.launches-page {
   padding: 10px 10px 0 10px;
 }
 
-/* ===========================
-   ROCKET NAME
-=========================== */
-.rocket-name {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  color: #FFFFFF;
-  padding: 4px 10px 0 10px;
-}
-
-/* ===========================
-   LAUNCH SITE
-=========================== */
+.rocket-name,
 .launch-site {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
@@ -296,9 +277,6 @@ body.launches-page {
   padding: 4px 10px 0 10px;
 }
 
-/* ===========================
-   STATUS
-=========================== */
 .launch-status {
   font-family: 'Tomorrow', sans-serif;
   font-size: 10px;
