@@ -347,7 +347,7 @@ main.org-section {
 .sidebar-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px; /* tighter since lines separate items */
 }
 
 .sidebar-title {
@@ -365,7 +365,7 @@ main.org-section {
   color: #252525;
 }
 
-.sidebar-divider {
+.sidebar-line {
   width: 100%;
   height: 1px;
   background-color: #dcdcdc;
@@ -401,6 +401,14 @@ main.org-section {
   max-width: 900px;
 }
 
+.exec-sidebar {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-right: 1px solid #dcdcdc; /* ← vertical divider */
+  padding-right: 20px; /* spacing so text doesn't touch the line */
+}
 
 /* ================================
    EXECUTIVE GRID (3 × 4)
