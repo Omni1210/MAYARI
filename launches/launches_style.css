@@ -221,18 +221,21 @@ body.launches-page {
 /* ===========================
    LAUNCH CARD
 =========================== */
+/* ✅ Only launch cards ignore browser zoom */
+.launch-strip {
+  zoom: 1 !important;
+}
+
 .launch-card {
-  width: 200px;
-  height: auto;
-  transform: scale(1);              /* ✅ prevents zoom scaling */
-  transform-origin: top left;
+  transform: scale(1) !important;
+  transform-origin: top left !important;
 }
 
 .launch-card * {
-  transform: scale(1);              /* ✅ prevents children from scaling */
-  font-size: 1rem;                  /* ✅ keeps text readable */
+  transform: scale(1) !important;
+  -webkit-text-size-adjust: none !important;
+  text-size-adjust: none !important;
 }
-
 
 /* ===========================
    DARK OVERLAY
