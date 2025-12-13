@@ -260,14 +260,18 @@ header.frame.sticky {
     max-width: 90%;
   }
 
-  .depot-right {
-    width: 100%;
+    .depot-right {
+    width: 535px;
+    max-width: 100%;
     height: auto;
+  }
+  
+  .depot-graphic {
+    width: 100%;
+    max-width: 535px;
+    height: auto;
+    object-fit: contain;
   }
 
-  .depot-graphic {
-    width: 80%;
-    height: auto;
-  }
 }
 
