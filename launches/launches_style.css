@@ -154,8 +154,20 @@ body.launches-page {
 .launch-time-wrapper {
   display: flex;
   justify-content: center;
-  gap: 60px;              /* space between UTC and PHT blocks */
+  gap: 60px;
   margin-top: 30px;
+  position: relative; /* needed for the line */
+}
+
+.launch-time-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.25); /* ✅ subtle white line */
+  transform: translateX(-50%);
 }
 
 .time-block {
