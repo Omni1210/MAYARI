@@ -120,20 +120,20 @@ header.frame.sticky {
 /* ===========================
    DEPOT INTRO SECTION
 =========================== */
-
 .depot-intro {
   display: flex;
-  justify-content: center;      /* ✅ center the whole block */
+  justify-content: center;
   align-items: flex-start;
-  gap: 32px;                    /* ✅ visible, balanced gap */
-  padding: 40px 60px;           /* ✅ softer spacing, no edge hugging */
-  margin-top: 80px;             /* ✅ correct vertical position */
+  gap: 48px;              /* ✅ proper spacing between columns */
+  padding: 40px 80px;     /* ✅ more breathing room on the sides */
+  margin-top: 80px;
   background: transparent;
 
-  max-width: 1200px;            /* ✅ prevents layout from stretching too wide */
+  max-width: 1300px;      /* ✅ correct width for your content */
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /* LEFT COLUMN */
 .depot-left {
