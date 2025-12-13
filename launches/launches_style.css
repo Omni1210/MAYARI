@@ -124,6 +124,8 @@ header.frame.sticky {
   margin-top: 60px;
   padding-left: 0;
   padding-right: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* ===========================
@@ -159,7 +161,7 @@ body.launches-page {
   position: relative;
 }
 
-/* ✅ Vertical white separator line */
+/* Vertical white separator line */
 .launch-time-wrapper::before {
   content: "";
   position: absolute;
@@ -171,7 +173,7 @@ body.launches-page {
   transform: translateX(-50%);
 }
 
-/* ✅ Expanded, less congested time blocks */
+/* Expanded, less congested time blocks */
 .time-block {
   background: rgba(255, 255, 255, 0.08);
   padding: 20px 40px;
@@ -179,7 +181,7 @@ body.launches-page {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  min-width: 300px; /* ✅ longer container */
+  min-width: 300px;
   text-align: left;
 }
 
@@ -212,6 +214,7 @@ body.launches-page {
   padding-left: 0;
   padding-right: 0;
   scrollbar-width: none;
+  width: 100vw;
 }
 
 .launch-strip::-webkit-scrollbar {
@@ -221,20 +224,13 @@ body.launches-page {
 /* ===========================
    LAUNCH CARD
 =========================== */
-/* ✅ Only launch cards ignore browser zoom */
-.launch-strip {
-  zoom: 1 !important;
-}
-
 .launch-card {
-  transform: scale(1) !important;
-  transform-origin: top left !important;
-}
-
-.launch-card * {
-  transform: scale(1) !important;
-  -webkit-text-size-adjust: none !important;
-  text-size-adjust: none !important;
+  width: 200px;
+  flex: 0 0 200px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0;
 }
 
 /* ===========================
