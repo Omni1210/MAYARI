@@ -195,6 +195,120 @@ main.org-section {
   transform: rotate(45deg);  /* make them look like diagonal dots */
 }
 
+/* ================================
+   ADVISER SECTION LAYOUT
+================================ */
+
+.org-adviser-section {
+  padding-top: 120px; /* adjust depending on header height */
+  display: flex;
+  justify-content: center;
+}
+
+.org-adviser-columns {
+  display: flex;
+  gap: 60px; /* spacing between left and right columns */
+  align-items: flex-start; /* ensures adviser name aligns with quote */
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+/* ================================
+   LEFT COLUMN
+================================ */
+
+.adviser-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.adviser-photo {
+  width: 271px;
+  height: 267px;
+  object-fit: cover;
+  display: block;
+}
+
+.adviser-info {
+  margin-top: 16px;
+}
+
+.adviser-label {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 20px;
+  color: #FF5F00;
+  letter-spacing: 0.5px;
+}
+
+.adviser-name {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400; /* Italic handled by font-style */
+  font-style: italic;
+  font-size: 16px;
+  color: #252525;
+  margin-top: 4px;
+}
+
+
+/* ================================
+   RIGHT COLUMN
+================================ */
+
+.adviser-right {
+  max-width: 650px;
+}
+
+.adviser-heading {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 24px;
+  color: #FF5F00;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.adviser-body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 14px;
+  color: #252525;
+  line-height: 1.9;
+  text-align: justify;
+  margin-bottom: 32px;
+}
+
+
+/* ================================
+   QUOTE BLOCK
+================================ */
+
+.adviser-quote-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.adviser-quote {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  color: #252525;
+  letter-spacing: 0.4px;
+  margin-bottom: 6px;
+}
+
+.adviser-quote-author {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 14px;
+  color: #252525;
+  letter-spacing: 0.3px;
+}
 
 
 
