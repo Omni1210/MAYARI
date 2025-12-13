@@ -223,12 +223,16 @@ body.launches-page {
 =========================== */
 .launch-card {
   width: 200px;
-  flex: 0 0 auto;
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 0;
+  height: auto;
+  transform: scale(1);              /* ✅ prevents zoom scaling */
+  transform-origin: top left;
 }
+
+.launch-card * {
+  transform: scale(1);              /* ✅ prevents children from scaling */
+  font-size: 1rem;                  /* ✅ keeps text readable */
+}
+
 
 /* ===========================
    DARK OVERLAY
