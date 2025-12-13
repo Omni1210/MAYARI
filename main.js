@@ -225,3 +225,14 @@ function loadCategory(category) {
 
 loadCategory("executives");
 
+document.querySelectorAll(".sidebar-item").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".sidebar-item.active")?.classList.remove("active");
+    btn.classList.add("active");
+
+    const category = btn.getAttribute("data-category");
+    loadCategory(category);
+  });
+});
+
+
