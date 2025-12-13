@@ -121,6 +121,17 @@ header.frame.sticky {
   /* ✅ remove font-size override */
 }
 
+
+
+
+
+/* Push the entire launches content downward */
+.main-content {
+  margin-top: 60px;   /* adjust this number to taste */
+}
+
+
+
 /* ===========================
    PAGE-SPECIFIC BACKGROUND
 =========================== */
