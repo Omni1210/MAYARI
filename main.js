@@ -62,7 +62,7 @@ const categories = {
     strategies to ensure the growth, consistency, and long-term success of the
     organization.`,
     members: [
-      { name: "Cejay Cena", position: "President", photo: "img/executives/president.png" },
+      { name: "Cejay Cena", position: "President", photo: "/img/executives/president.png" },
       { name: "Ahron Martinez", position: "Vice President for Internal Affairs", photo: "img/executives/vp-internal.png" },
       { name: "Keith Humprey Uaje", position: "Vice President for External Affairs", photo: "img/executives/vp-external.png" },
       { name: "Lanz Pelaga", position: "Secretary", photo: "img/executives/secretary.png" },
