@@ -209,7 +209,7 @@ main.org-section {
   display: flex;
   gap: 90px; /* spacing between left and right columns */
   align-items: flex-start; /* ensures adviser name aligns with quote */
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
 }
 
