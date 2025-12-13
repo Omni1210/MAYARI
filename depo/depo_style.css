@@ -123,17 +123,21 @@ header.frame.sticky {
 
 .depot-intro {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;      /* ✅ center the whole block */
   align-items: flex-start;
-  gap: 20px;          /* ✅ reduced gap */
-  padding: 80px 60px; /* ✅ no more hugging edges */
-  margin-top: 120px;  /* ✅ push section downward */
+  gap: 32px;                    /* ✅ visible, balanced gap */
+  padding: 40px 60px;           /* ✅ softer spacing, no edge hugging */
+  margin-top: 80px;             /* ✅ correct vertical position */
   background: transparent;
-}
 
+  max-width: 1200px;            /* ✅ prevents layout from stretching too wide */
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* LEFT COLUMN */
 .depot-left {
+  flex: 1;                      /* ✅ allows natural shrink/grow */
   max-width: 520px;
   background: transparent;
 }
@@ -141,7 +145,7 @@ header.frame.sticky {
 /* MAIN TITLE */
 .depot-title {
   font-family: "Tomorrow", sans-serif;
-  font-weight: 400; /* Regular */
+  font-weight: 400;
   font-size: 40px;
   color: #FF5F00;
   margin: 0 0 8px 0;
@@ -151,7 +155,7 @@ header.frame.sticky {
 /* SUBTITLE */
 .depot-subtitle {
   font-family: "Tomorrow", sans-serif;
-  font-weight: 300; /* Light */
+  font-weight: 300;
   font-size: 24px;
   color: #252525;
   text-transform: uppercase;
@@ -163,11 +167,11 @@ header.frame.sticky {
 /* INTRO PARAGRAPH */
 .depot-intro-text {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; /* Light */
+  font-weight: 300;
   font-size: 14px;
   color: #252525;
   line-height: 1.6;
-  text-align: justify; /* ✅ as requested */
+  text-align: justify;
   margin: 0 0 28px 0;
   background: transparent;
 }
@@ -233,8 +237,10 @@ header.frame.sticky {
 
 /* RIGHT COLUMN — VISUAL GRAPHIC */
 .depot-right {
+  flex-shrink: 1;               /* ✅ allows shrinking on smaller screens */
   width: 535px;
-  height: 497px;
+  max-width: 100%;              /* ✅ prevents overflow */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,8 +248,9 @@ header.frame.sticky {
 }
 
 .depot-graphic {
-  width: 535px;
-  height: 497px;
+  width: 100%;                  /* ✅ responsive */
+  max-width: 535px;
+  height: auto;
   object-fit: contain;
   background: transparent;
 }
@@ -254,24 +261,24 @@ header.frame.sticky {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 24px;
+    padding: 32px 24px;
+    margin-top: 40px;
   }
 
   .depot-left {
-    max-width: 90%;
+    max-width: 100%;
   }
 
-    .depot-right {
-    width: 535px;
-    max-width: 100%;
+  .depot-right {
+    width: 100%;
     height: auto;
   }
-  
+
   .depot-graphic {
-    width: 100%;
+    width: 80%;
     max-width: 535px;
     height: auto;
-    object-fit: contain;
   }
-
 }
 
