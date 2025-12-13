@@ -125,10 +125,12 @@ header.frame.sticky {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 60px;
-  padding: 40px 0;
+  gap: 40px;          /* ✅ reduced gap */
+  padding: 80px 60px; /* ✅ no more hugging edges */
+  margin-top: 120px;  /* ✅ push section downward */
   background: transparent;
 }
+
 
 /* LEFT COLUMN */
 .depot-left {
