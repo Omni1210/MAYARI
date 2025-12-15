@@ -281,3 +281,50 @@ header.frame.sticky {
   }
 }
 
+.left-column {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-panel {
+  width: 650px;
+  height: 810px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.left-panel img {
+  width: 650px;
+  height: 613px;
+  object-fit: cover;
+  display: block;
+}
+
+.left-card-row {
+  width: 650px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-card {
+  width: 325px;
+  height: 430px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-card img {
+  width: 325px;
+  height: 272px;
+  object-fit: cover;
+  display: block;
+}
+
