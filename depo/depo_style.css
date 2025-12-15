@@ -286,15 +286,14 @@ header.frame.sticky {
 .depot-products {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start;   /* ✅ keeps columns on the left */
   align-items: flex-start;
-  gap: 60px;                         /* spacing between columns */
+  gap: 60px;                     /* ✅ spacing between left & right columns */
   margin-top: 80px;
-  padding-left: 100px;              /* breathing room from left edge */
-  padding-right: 100px;             /* optional symmetry */
-  border: 2px solid black;          /* ✅ visible boundary */
-  box-sizing: border-box;
+  padding-left: 60px;            /* ✅ breathing room from page edge */
+  border: 2px black;   /* ✅ shows the section boundary */
 }
+
 
 
 /* ✅ LEFT COLUMN */
@@ -302,14 +301,10 @@ header.frame.sticky {
   width: 650px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;          /* ✅ left-align internal content */
-  padding: 10px;                    /* ✅ internal spacing */
-  border: 2px solid black;          /* ✅ visible boundary */
-  box-sizing: border-box;
+  align-items: flex-start;   /* ✅ correct alignment */
 }
 
-
-/* ✅ LEFT PANEL (top block) */
+/* Large panel on top */
 .left-panel {
   width: 650px;
   height: 810px;
@@ -317,7 +312,7 @@ header.frame.sticky {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  border: 1px solid black;          /* ✅ visible boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 .left-panel img {
@@ -327,8 +322,7 @@ header.frame.sticky {
   display: block;
 }
 
-
-/* ✅ LEFT CARDS (bottom row) */
+/* Two cards under the panel */
 .left-card-row {
   width: 650px;
   margin-top: 30px;
@@ -342,7 +336,7 @@ header.frame.sticky {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;          /* ✅ visible boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 .left-card img {
@@ -353,19 +347,16 @@ header.frame.sticky {
 }
 
 
+
 /* ✅ RIGHT COLUMN */
 .right-column {
   width: 650px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;          /* ✅ left-align internal content */
-  padding: 10px;                    /* ✅ internal spacing */
-  border: 2px solid black;          /* ✅ visible boundary */
-  box-sizing: border-box;
+  align-items: center;
 }
 
-
-/* ✅ RIGHT CARDS (top row) */
+/* Two cards on top */
 .right-card-row {
   width: 650px;
   display: flex;
@@ -378,7 +369,7 @@ header.frame.sticky {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;          /* ✅ visible boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 .right-card img {
@@ -388,17 +379,15 @@ header.frame.sticky {
   display: block;
 }
 
-
-/* ✅ RIGHT PANEL (bottom block) */
+/* Large panel at the bottom */
 .right-panel {
   width: 650px;
   height: 810px;
-  margin-top: 30px;
+  margin-top: 30px; /* ✅ vertical gap */
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  border: 1px solid black;          /* ✅ visible boundary */
 }
 
 .right-panel img {
