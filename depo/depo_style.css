@@ -242,11 +242,11 @@ header.frame.sticky {
   background: transparent;
 }
 
-/* RIGHT COLUMN — VISUAL GRAPHIC */
+  /* ✅ RIGHT COLUMN — VISUAL GRAPHIC (from intro section) */
 .depot-right {
-  flex-shrink: 1;               /* ✅ allows shrinking on smaller screens */
+  flex-shrink: 1;
   width: 535px;
-  max-width: 100%;              /* ✅ prevents overflow */
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -255,14 +255,14 @@ header.frame.sticky {
 }
 
 .depot-graphic {
-  width: 100%;                  /* ✅ responsive */
+  width: 100%;
   max-width: 535px;
   height: auto;
   object-fit: contain;
   background: transparent;
 }
 
-/* RESPONSIVE STACKING */
+/* ✅ RESPONSIVE STACKING FOR INTRO SECTION */
 @media (max-width: 1100px) {
   .depot-intro {
     flex-direction: column;
@@ -273,7 +273,6 @@ header.frame.sticky {
     margin-top: 40px;
   }
 
-
   .depot-graphic {
     width: 80%;
     max-width: 535px;
@@ -281,6 +280,16 @@ header.frame.sticky {
   }
 }
 
+/* ✅ NEW PRODUCTS SECTION WRAPPER — FIXES LEFT-HUGGING */
+.depot-products {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* ✅ centers the left column */
+  margin-top: 80px;          /* ✅ spacing from intro section */
+}
+
+
+/* ✅ LEFT COLUMN */
 .left-column {
   width: 650px;
   display: flex;
@@ -288,6 +297,8 @@ header.frame.sticky {
   align-items: center;
 }
 
+
+/* ✅ TOP PANEL */
 .left-panel {
   width: 650px;
   height: 810px;
@@ -305,6 +316,8 @@ header.frame.sticky {
   display: block;
 }
 
+
+/* ✅ TWO CARDS UNDER THE PANEL */
 .left-card-row {
   width: 650px;
   margin-top: 30px;
@@ -327,4 +340,3 @@ header.frame.sticky {
   object-fit: cover;
   display: block;
 }
-
