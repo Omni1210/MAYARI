@@ -283,6 +283,7 @@ header.frame.sticky {
 }
 
 /* ✅ PRODUCTS SECTION WRAPPER */
+/* ✅ PRODUCTS SECTION WRAPPER */
 .depot-products {
   width: 100%;
   display: flex;
@@ -317,16 +318,19 @@ header.frame.sticky {
   border-radius: 12px;        /* ✅ smooth corners */
 }
 
+/* ✅ IMAGE ABOVE OVERLAY */
 .left-panel img,
 .right-panel img {
   width: 650px;
   height: 613px;
   object-fit: cover;
   display: block;
-  border-radius: inherit;     /* ✅ image follows curve */
+  position: relative;
+  z-index: 2;                 /* ✅ image on top */
+  border-radius: inherit;
 }
 
-/* ✅ DARK OVERLAY FOR PANELS */
+/* ✅ OVERLAY BELOW IMAGE */
 .left-panel::before,
 .right-panel::before {
   content: "";
@@ -334,8 +338,8 @@ header.frame.sticky {
   inset: 0;
   background: rgba(0,0,0,0.55);
   pointer-events: none;
-  z-index: 2;
-  border-radius: inherit;     /* ✅ overlay follows curve */
+  z-index: 1;                 /* ✅ overlay behind image */
+  border-radius: inherit;
 }
 
 
@@ -371,16 +375,19 @@ header.frame.sticky {
   border-radius: 12px;        /* ✅ smooth corners */
 }
 
+/* ✅ IMAGE ABOVE OVERLAY */
 .left-card img,
 .right-card img {
   width: 320px;
   height: 272px;
   object-fit: cover;
   display: block;
-  border-radius: inherit;     /* ✅ image follows curve */
+  position: relative;
+  z-index: 2;                 /* ✅ image on top */
+  border-radius: inherit;
 }
 
-/* ✅ DARK OVERLAY FOR CARDS */
+/* ✅ OVERLAY BELOW IMAGE */
 .left-card::before,
 .right-card::before {
   content: "";
@@ -388,6 +395,6 @@ header.frame.sticky {
   inset: 0;
   background: rgba(0,0,0,0.55);
   pointer-events: none;
-  z-index: 2;
-  border-radius: inherit;     /* ✅ overlay follows curve */
+  z-index: 1;                 /* ✅ overlay behind image */
+  border-radius: inherit;
 }
