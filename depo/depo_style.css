@@ -302,7 +302,7 @@ header.frame.sticky {
   display: flex;
   flex-direction: column;
   align-items: flex-start;   /* ✅ correct alignment */
-  border: 2px black;   /* ✅ shows the section boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 /* Large panel on top */
@@ -313,7 +313,7 @@ header.frame.sticky {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  border: 2px black;   /* ✅ shows the section boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 .left-panel img {
@@ -337,7 +337,7 @@ header.frame.sticky {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px black;   /* ✅ shows the section boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 .left-card img {
@@ -355,7 +355,7 @@ header.frame.sticky {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px black;   /* ✅ shows the section boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 /* Two cards on top */
@@ -371,7 +371,7 @@ header.frame.sticky {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px black;   /* ✅ shows the section boundary */
+  border: 2px solid black;   /* ✅ shows the section boundary */
 }
 
 .right-card img {
