@@ -340,16 +340,25 @@ header.frame.sticky {
 .left-card-row,
 .right-card-row {
   width: 650px;               /* ✅ 320 + 10 + 320 */
-  margin-top: 30px;
   display: flex;
   justify-content: space-between;
+}
+
+/* ✅ FIX: Right column gap must be BELOW the cards */
+.right-panel {
+  margin-top: 30px;           /* ✅ correct vertical spacing */
+}
+
+/* ✅ Left column already has the gap ABOVE the cards */
+.left-card-row {
+  margin-top: 30px;
 }
 
 
 /* ✅ INDIVIDUAL CARDS */
 .left-card,
 .right-card {
-  width: 320px;
+  width: 320px;               /* ✅ corrected width */
   height: 430px;
   position: relative;         /* ✅ required for overlay */
   overflow: hidden;
@@ -376,4 +385,3 @@ header.frame.sticky {
   pointer-events: none;
   z-index: 2;
 }
-
