@@ -254,6 +254,8 @@ header.frame.sticky {
   background: transparent;
 }
 
+
+
 .depot-graphic {
   width: 100%;
   max-width: 535px;
@@ -280,13 +282,17 @@ header.frame.sticky {
   }
 }
 
-/* ✅ NEW PRODUCTS SECTION WRAPPER — FIXES LEFT-HUGGING */
+/* ✅ PRODUCTS SECTION WRAPPER */
 .depot-products {
   width: 100%;
   display: flex;
-  justify-content: center;   /* ✅ centers the left column */
-  margin-top: 80px;          /* ✅ spacing from intro section */
+  justify-content: flex-start;   /* ✅ keeps columns on the left */
+  align-items: flex-start;
+  gap: 60px;                     /* ✅ spacing between left & right columns */
+  margin-top: 80px;
+  padding-left: 60px;            /* ✅ breathing room from page edge */
 }
+
 
 
 /* ✅ LEFT COLUMN */
@@ -294,15 +300,13 @@ header.frame.sticky {
   width: 650px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;   /* ✅ correct alignment */
 }
 
-
-/* ✅ TOP PANEL */
+/* Large panel on top */
 .left-panel {
   width: 650px;
   height: 810px;
-  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,8 +320,7 @@ header.frame.sticky {
   display: block;
 }
 
-
-/* ✅ TWO CARDS UNDER THE PANEL */
+/* Two cards under the panel */
 .left-card-row {
   width: 650px;
   margin-top: 30px;
@@ -328,7 +331,6 @@ header.frame.sticky {
 .left-card {
   width: 325px;
   height: 430px;
-  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,6 +339,56 @@ header.frame.sticky {
 .left-card img {
   width: 325px;
   height: 272px;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+/* ✅ RIGHT COLUMN */
+.right-column {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Two cards on top */
+.right-card-row {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-card {
+  width: 325px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-card img {
+  width: 325px;
+  height: 272px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Large panel at the bottom */
+.right-panel {
+  width: 650px;
+  height: 810px;
+  margin-top: 30px; /* ✅ vertical gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.right-panel img {
+  width: 650px;
+  height: 613px;
   object-fit: cover;
   display: block;
 }
