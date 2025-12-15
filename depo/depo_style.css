@@ -312,8 +312,9 @@ header.frame.sticky {
 .right-panel {
   width: 650px;
   height: 810px;
-  position: relative;        /* ✅ required for overlay */
+  position: relative;
   overflow: hidden;
+  border-radius: 12px;        /* ✅ smooth corners */
 }
 
 .left-panel img,
@@ -322,6 +323,7 @@ header.frame.sticky {
   height: 613px;
   object-fit: cover;
   display: block;
+  border-radius: inherit;     /* ✅ image follows curve */
 }
 
 /* ✅ DARK OVERLAY FOR PANELS */
@@ -333,6 +335,7 @@ header.frame.sticky {
   background: rgba(0,0,0,0.55);
   pointer-events: none;
   z-index: 2;
+  border-radius: inherit;     /* ✅ overlay follows curve */
 }
 
 
@@ -344,13 +347,13 @@ header.frame.sticky {
   justify-content: space-between;
 }
 
-/* ✅ FIX: Right column gap must be BELOW the cards */
-.right-panel {
-  margin-top: 30px;           /* ✅ correct vertical spacing */
+/* ✅ Left column gap BELOW the panel */
+.left-card-row {
+  margin-top: 30px;
 }
 
-/* ✅ Left column already has the gap ABOVE the cards */
-.left-card-row {
+/* ✅ Right column gap BELOW the cards */
+.right-panel {
   margin-top: 30px;
 }
 
@@ -360,11 +363,12 @@ header.frame.sticky {
 .right-card {
   width: 320px;               /* ✅ corrected width */
   height: 430px;
-  position: relative;         /* ✅ required for overlay */
+  position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 12px;        /* ✅ smooth corners */
 }
 
 .left-card img,
@@ -373,6 +377,7 @@ header.frame.sticky {
   height: 272px;
   object-fit: cover;
   display: block;
+  border-radius: inherit;     /* ✅ image follows curve */
 }
 
 /* ✅ DARK OVERLAY FOR CARDS */
@@ -384,4 +389,5 @@ header.frame.sticky {
   background: rgba(0,0,0,0.55);
   pointer-events: none;
   z-index: 2;
+  border-radius: inherit;     /* ✅ overlay follows curve */
 }
